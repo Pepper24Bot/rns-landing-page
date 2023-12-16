@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ButtonItem, PageContent } from "../../Global/StyledGlobal";
+import { BaseButton, PageContent } from "../../Global/StyledGlobal";
 
 export const Container = styled(PageContent)`
   min-height: calc(100vh - 100px);
@@ -30,7 +30,7 @@ export const HighlightText = styled.span`
   color: var(--primary);
 `;
 
-export const SearchButton = styled(ButtonItem)`
+export const SearchButton = styled(BaseButton)`
   font-size: var(--md-text);
   margin-top: 40px;
   padding: 12px 24px;

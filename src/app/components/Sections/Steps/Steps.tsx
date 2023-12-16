@@ -9,8 +9,8 @@ import {
   LineConnector,
   MobileLayout,
   RightContent,
-  SubTitle,
-  Title,
+  StepSubTitle,
+  StepTitle,
 } from "./StyledSteps";
 import { STEPS } from "@/app/global/constants";
 
@@ -26,8 +26,8 @@ export const Steps: React.FC = () => {
                   isLeft={(index + 1) % 2 === 0}
                   className={`slide-right-delay-${index + 1} reveal`}
                 >
-                  <Title>{step.heading}</Title>
-                  <SubTitle>{step.subheading}</SubTitle>
+                  <StepTitle>{step.heading}</StepTitle>
+                  <StepSubTitle>{step.subheading}</StepSubTitle>
                 </LeftContent>
                 <div className={`slide-up-delay-${index + 1} reveal`}>
                   <Avatar>{index + 1}</Avatar>
@@ -37,8 +37,8 @@ export const Steps: React.FC = () => {
                   isRight={(index + 1) % 2 !== 0}
                   className={`slide-left-delay-${index + 1} reveal`}
                 >
-                  <Title>{step.heading}</Title>
-                  <SubTitle>{step.subheading}</SubTitle>
+                  <StepTitle>{step.heading}</StepTitle>
+                  <StepSubTitle>{step.subheading}</StepSubTitle>
                 </RightContent>
               </FeatureItem>
             );
@@ -52,9 +52,12 @@ export const Steps: React.FC = () => {
                   <Avatar>{index + 1}</Avatar>
                   <LineConnector isHidden={index !== STEPS.length - 1} />
                 </div>
-                <RightContent isRight>
-                  <Title>{step.heading}</Title>
-                  <SubTitle>{step.subheading}</SubTitle>
+                <RightContent
+                  isRight
+                  className={`slide-left-delay-${index + 1} reveal`}
+                >
+                  <StepTitle>{step.heading}</StepTitle>
+                  <StepSubTitle>{step.subheading}</StepSubTitle>
                 </RightContent>
               </FeatureItem>
             );

@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { BaseFont, FlexCenter } from "../../Global/StyledGlobal";
+import { FlexCenter, Title, SubTitle } from "../../Global/StyledGlobal";
 
 export const Container = styled(FlexCenter)`
   background-color: var(--darker);
-  padding: var(--lg-padding);
+  padding: 64px 32px;
   width: 100%;
   min-height: calc(100vh - 100px);
 `;
@@ -30,21 +30,15 @@ export const FeatureItem = styled(FlexCenter)`
   align-items: start;
 `;
 
-export const Title = styled(BaseFont)`
-  font-size: var(--xxl-text);
-  text-transform: uppercase;
+export const StepTitle = styled(Title)`
   line-height: 48px;
   padding-bottom: 12px;
 `;
 
-export const SubTitle = styled(BaseFont)`
+export const StepSubTitle = styled(SubTitle)`
   max-width: 500px;
-  font-weight: normal;
-  font-size: var(--lg-text);
-
-  @media only screen and (min-width: 1000px) {
-    font-size: 24px;
-  }
+  font-weight: 200;
+  opacity: 0.75;
 `;
 
 export const LeftContent = styled.div<{ isLeft?: boolean }>`

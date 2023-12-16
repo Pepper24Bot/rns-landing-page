@@ -12,7 +12,7 @@ export const LeftPanel = styled(Grid)`
 
   @media only screen and (max-width: 650px) {
     height: 200px;
-    grid-column: span 6;
+    grid-column: span 12;
     justify-content: center;
   }
 `;
@@ -27,7 +27,7 @@ export const RightPanel = styled(Grid)`
   padding: var(--lg-padding);
 
   @media only screen and (max-width: 650px) {
-    grid-column: span 6;
+    grid-column: span 12;
     justify-content: center;
   }
 `;

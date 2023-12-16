@@ -4,6 +4,7 @@
 
 @import "~@fontsource/roboto-mono/700.css";
 @import "~@fontsource/roboto-mono/500.css";
+@import "~@fontsource/roboto-mono/200.css";
 
 :root {
   --foreground-rgb: 0 0 0;
@@ -27,17 +28,6 @@
   --md-padding: 24px;
   --lg-padding: 32px;
 }
-
-/* export enum FONT_SIZE {
-  Xxsmall = "calc(8px + 0.3vmax)",
-  Xsmall = "calc(8px + 0.4vmax)",
-  Small = "calc(8px + 0.5vmax)",
-  Medium = "calc(10px + 0.5vmax)",
-  Large = "calc(10px + 0.75vmax)",
-  Xlarge = "calc(15px + 1vmax)",
-  Xxlarge = "calc(20px + 1.35vmax)",
-  Xxxlarge = "calc(40px + 2vmax)",
-} */
 
 @media (prefers-color-scheme: dark) {
   :root {

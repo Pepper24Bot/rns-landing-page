@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavigationBar, Container, ToolBar } from "./StyledNavigation";
-import { ButtonItem, ImageContainer } from "../Global/StyledGlobal";
+import { BaseButton, ImageContainer } from "../Global/StyledGlobal";
 
 import Image from "next/image";
 
@@ -26,7 +26,7 @@ export const Header: React.FC = () => {
             />
           </ImageContainer>
           <ToolBar>
-            <ButtonItem>Log In</ButtonItem>
+            <BaseButton>Log In</BaseButton>
           </ToolBar>
         </NavigationBar>
       </Container>

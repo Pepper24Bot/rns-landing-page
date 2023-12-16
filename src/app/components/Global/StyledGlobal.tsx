@@ -48,21 +48,21 @@ export const Grid = styled.div<{
     container
       ? `
         display: grid;
-        grid-template-columns: repeat(6, 1fr);/
+        grid-template-columns: repeat(12, 1fr);/
       `
       : ""};
   ${({ spancolumn }) => (spancolumn ? `grid-column: span ${spancolumn}` : "")};
   ${({ column }) => (column ? `grid-column: ${column}` : "")};
 `;
 
-export const ButtonItem = styled.button`
+export const BaseButton = styled.button`
   font-family: var(--default-font);
   font-weight: bold;
   font-size: var(--sm-text);
   padding: var(--xs-padding) var(--md-padding);
   background-color: var(--secondary);
   box-shadow: var(--shadow-1);
-  border-radius: 2px;
+  border-radius: 4px;
   text-transform: uppercase;
   color: var(--background-darkest);
 
@@ -72,11 +72,35 @@ export const ButtonItem = styled.button`
   }
 `;
 
+export const Button = styled(BaseButton)`
+  font-size: var(--md-text);
+  padding: 12px 24px;
+  width: 250px;
+`;
+
 export const BaseFont = styled.p`
   font-size: var(--md-text);
   font-weight: bold;
   font-family: var(--default-font);
   line-height: normal;
+`;
+
+export const Title = styled(BaseFont)`
+  font-size: var(--xxl-text);
+  text-transform: uppercase;
+
+  @media only screen and (min-width: 1000px) {
+    font-size: 48px;
+  }
+`;
+
+export const SubTitle = styled(BaseFont)`
+  font-size: var(--lg-text);
+  font-weight: 200;
+
+  @media only screen and (min-width: 1000px) {
+    font-size: 24px;
+  }
 `;
 
 export const ImageContainer = styled.div`

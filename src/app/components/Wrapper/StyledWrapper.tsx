@@ -18,6 +18,6 @@ export const Content = styled.div`
 
 export const Footer = styled.div`
   background-color: rgba(0, 0, 0, 1);
-  border-top: solid 1px var(--secondary);
+  border-top: solid 1px rgba(255, 255, 255, 0.25);
   height: 125px;
 `;

@@ -56,3 +56,26 @@ export const STEPS: Step[] = [
         url: ''
     }
 ]
+
+export const PARTNERS = [
+    {
+        label: 'Partner1',
+        link: '',
+        path: '/images/partners/partner1.svg'
+    },
+    {
+        label: 'RootNetwork',
+        link: '',
+        path: '/images/partners/rootnetwork.svg'
+    },
+    {
+        label: 'Mark',
+        link: '',
+        path: '/images/partners/mark.svg'
+    },
+    {
+        label: 'More coming soon',
+        link: '',
+        path: ''
+    },
+]
