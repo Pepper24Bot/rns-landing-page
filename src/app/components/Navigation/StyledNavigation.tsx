@@ -14,7 +14,7 @@ export const Container = styled(FlexCenter)<{ isTop?: boolean }>`
   background-color: ${({ isTop }) =>
     isTop ? "transparent" : "var(--background-darkest)"};
   box-shadow: var(--shadow-1);
-  // border-bottom: ${({ isTop }) =>
+  //  border-bottom: ${({ isTop }) =>
     isTop ? "solid 1px var(--secondary)" : "none"};
   border-bottom: solid 1px var(--secondary);
 `;
@@ -26,7 +26,6 @@ export const NavigationBar = styled(FlexJustified)`
 `;
 
 export const ToolBar = styled(FlexRight)`
-  width: 50%;
   height: 100%;
 `;
 

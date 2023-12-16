@@ -2,7 +2,7 @@ import React from "react";
 
 import Image from "next/image";
 
-import { Grid, PageSection } from "../../Global/StyledGlobal";
+import { Grid, ImageContainer, PageSection } from "../../Global/StyledGlobal";
 import {
   FeatureContext,
   FeatureItem,
@@ -21,14 +21,14 @@ export const Features: React.FC = () => {
             <FeatureContext className="slide-left reveal">
               Connect your
             </FeatureContext>
-            <div className="slide-right reveal">
+            <ImageContainer className="slide-right reveal">
               <Image
                 src="/images/rns-logo.svg"
                 alt="RNS Icon"
                 width={240}
                 height={110}
               />
-            </div>
+            </ImageContainer>
             <FeatureContext className="slide-left reveal">
               to your FuturePass
             </FeatureContext>

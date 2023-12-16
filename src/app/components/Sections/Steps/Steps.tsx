@@ -10,7 +10,6 @@ import {
   MobileLayout,
   RightContent,
   SubTitle,
-  Table,
   Title,
 } from "./StyledSteps";
 import { STEPS } from "@/app/global/constants";
@@ -45,7 +44,22 @@ export const Steps: React.FC = () => {
             );
           })}
         </DesktopLayout>
-        <MobileLayout>Mobile Layout</MobileLayout>
+        <MobileLayout>
+          {STEPS.map((step, index) => {
+            return (
+              <FeatureItem key={step.heading}>
+                <div className={`slide-up-delay-${index + 1} reveal`}>
+                  <Avatar>{index + 1}</Avatar>
+                  <LineConnector isHidden={index !== STEPS.length - 1} />
+                </div>
+                <RightContent isRight>
+                  <Title>{step.heading}</Title>
+                  <SubTitle>{step.subheading}</SubTitle>
+                </RightContent>
+              </FeatureItem>
+            );
+          })}
+        </MobileLayout>
       </Container>
     </PageSection>
   );

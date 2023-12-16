@@ -78,3 +78,7 @@ export const BaseFont = styled.p`
   font-family: var(--default-font);
   line-height: normal;
 `;
+
+export const ImageContainer = styled.div`
+  width: 50%;
+`;

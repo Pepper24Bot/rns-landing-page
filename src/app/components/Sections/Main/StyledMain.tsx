@@ -20,6 +20,10 @@ export const HeadingText = styled.p`
   word-break: break-word;
   line-height: normal;
   padding: var(--md-padding) 0;
+
+  @media only screen and (min-width: 1000px) {
+    font-size: 48px;
+  }
 `;
 
 export const HighlightText = styled.span`

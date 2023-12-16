@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavigationBar, Container, ToolBar } from "./StyledNavigation";
-import { ButtonItem } from "../Global/StyledGlobal";
+import { ButtonItem, ImageContainer } from "../Global/StyledGlobal";
 
 import Image from "next/image";
 
@@ -14,14 +14,23 @@ export const Header: React.FC = () => {
   }
 
   return (
-    <Container isTop={isTop}>
-      <NavigationBar>
-        <Image src="/images/rns.svg" alt="RNS Icon" width={450} height={60} />
-        <ToolBar>
-          <ButtonItem>Log In</ButtonItem>
-        </ToolBar>
-      </NavigationBar>
-    </Container>
+    <div>
+      <Container isTop={isTop}>
+        <NavigationBar>
+          <ImageContainer>
+            <Image
+              src="/images/rns.svg"
+              alt="RNS Icon"
+              width={450}
+              height={60}
+            />
+          </ImageContainer>
+          <ToolBar>
+            <ButtonItem>Log In</ButtonItem>
+          </ToolBar>
+        </NavigationBar>
+      </Container>
+    </div>
   );
 };
 

@@ -10,7 +10,6 @@ export const Container = styled(FlexCenter)`
 
 export const DesktopLayout = styled.div`
   max-width: var(--page-width);
-  width: 100%;
   padding: 48px 0;
 
   @media only screen and (max-width: 768px) {
@@ -51,14 +50,15 @@ export const SubTitle = styled(BaseFont)`
 export const LeftContent = styled.div<{ isLeft?: boolean }>`
   text-align: end;
   ${({ isLeft }) => `visibility: ${isLeft ? "visible" : "hidden"}`};
+  margin-right: 24px;
 `;
 
 export const RightContent = styled.div<{ isRight?: boolean }>`
   ${({ isRight }) => `visibility: ${isRight ? "visible" : "hidden"}`};
+  margin-left: 24px;
 `;
 
 export const Avatar = styled(FlexCenter)`
-  margin: 0 var(--md-padding);
   width: 56px;
   height: 56px;
   border-radius: 48px;
