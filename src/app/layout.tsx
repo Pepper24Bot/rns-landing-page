@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import PageWrapper from "./components/Wrapper/PageWrapper";
 
 import "./globals.css";
+import StyledComponentsRegistry from "./components/Wrapper/StyledComponentRegistry";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,9 @@ export default function RootLayout(props: LayoutProps) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <PageWrapper>{children}</PageWrapper>
+        <StyledComponentsRegistry>
+          <PageWrapper>{children}</PageWrapper>
+        </StyledComponentsRegistry>
       </body>
     </html>
   );
