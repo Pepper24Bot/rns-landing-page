@@ -2,26 +2,244 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "~@fontsource/roboto-mono/700.css";
+@import "~@fontsource/roboto-mono/500.css";
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 0 0 0;
+  --background-start-rgb: 214 219 220;
+  --background-end-rgb: 255 255 255;
+
+  --default-font: Roboto Mono;
+
+  --primary: #c2185b;
+  --secondary: #212121;
+
+  --xs-text: calc(8px + 0.4vmax);
+  --sm-text: calc(8px + 0.5vmax);
+  --md-text: calc(10px + 0.5vmax);
+  --lg-text: calc(10px + 0.75vmax);
+  --xl-text: calc(15px + 1vmax);
+  --xxl-text: calc(20px + 1.35vmax);
+
+  --xs-padding: 8px;
+  --sm-padding: 12px;
+  --md-padding: 24px;
+  --lg-padding: 32px;
 }
+
+/* export enum FONT_SIZE {
+  Xxsmall = "calc(8px + 0.3vmax)",
+  Xsmall = "calc(8px + 0.4vmax)",
+  Small = "calc(8px + 0.5vmax)",
+  Medium = "calc(10px + 0.5vmax)",
+  Large = "calc(10px + 0.75vmax)",
+  Xlarge = "calc(15px + 1vmax)",
+  Xxlarge = "calc(20px + 1.35vmax)",
+  Xxxlarge = "calc(40px + 2vmax)",
+} */
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 255 255 255;
+    --background-start-rgb: 0 0 0;
+    --background-end-rgb: 0 0 0;
+
+    /* custom */
+    --page-width: 1200px;
+
+    --background-main: #282828;
+    --background-default: #1a1a1a;
+    --background-dark: #181818;
+    --background-darker: #0d0d0d;
+    --background-darkest: #000;
+    --background-item: #130f0f;
+    --background-tile: #1f1f1f;
+
+    --secondary: #fafafa;
+
+    --shadow-1: 0px 4px 4px 0px rgba(0 0 0 0.25);
+    --border-color: rgba(0 117 255 0.5);
+    --divider-color: rgba(255 255 255 0.2);
+    --dim-color: rgba(255 255 255 0.35);
+    --highlight-text: rgba(0 117 255 1);
+    --contrast-text: rgba(255 255 255 1);
+    --label-color: rgba(255 255 255 0.75);
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: var(--default-font);
+  background-color: var(--background-default);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: var(--background-darker);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--background-default);
+}
+
+.slide-left.reveal {
+  transform: translateX(-75px);
+  opacity: 0;
+  transition: 500ms all ease;
+}
+
+.slide-right.reveal {
+  transform: translateX(75px);
+  opacity: 0;
+  transition: 500ms all ease;
+}
+
+.slide-up.reveal {
+  transform: translateY(75px);
+  opacity: 0;
+  transition: 500ms all ease;
+}
+
+.slide-down.reveal {
+  transform: translateY(-75px);
+  opacity: 0;
+  transition: 500ms all ease;
+}
+
+.slide-up-delay-1.reveal {
+  transform: translateY(75px);
+  opacity: 0;
+  transition: 500ms all ease;
+  transition-delay: 200ms;
+}
+
+.slide-up-delay-2.reveal {
+  transform: translateY(75px);
+  opacity: 0;
+  transition: 500ms all ease;
+  transition-delay: 400ms;
+}
+
+.slide-up-delay-3.reveal {
+  transform: translateY(75px);
+  opacity: 0;
+  transition: 500ms all ease;
+  transition-delay: 400ms;
+}
+
+.slide-up-delay-4.reveal {
+  transform: translateY(75px);
+  opacity: 0;
+  transition: 500ms all ease;
+  transition-delay: 600ms;
+}
+
+.slide-up-delay-5.reveal {
+  transform: translateY(75px);
+  opacity: 0;
+  transition: 500ms all ease;
+  transition-delay: 800ms;
+}
+
+.slide-up-delay-6.reveal {
+  transform: translateY(75px);
+  opacity: 0;
+  transition: 500ms all ease;
+  transition-delay: 1000ms;
+}
+
+.slide-right-delay-1.reveal {
+  transform: translateX(75px);
+  opacity: 0;
+  transition: 500ms all ease;
+  transition-delay: 200ms;
+}
+
+.slide-right-delay-2.reveal {
+  transform: translateX(75px);
+  opacity: 0;
+  transition: 500ms all ease;
+  transition-delay: 400ms;
+}
+
+.slide-right-delay-3.reveal {
+  transform: translateX(75px);
+  opacity: 0;
+  transition: 500ms all ease;
+  transition-delay: 600ms;
+}
+
+.slide-right-delay-4.reveal {
+  transform: translateX(75px);
+  opacity: 0;
+  transition: 500ms all ease;
+  transition-delay: 800ms;
+}
+
+.slide-right-delay-5.reveal {
+  transform: translateX(75px);
+  opacity: 0;
+  transition: 500ms all ease;
+  transition-delay: 1000ms;
+}
+
+.slide-right-delay-6.reveal {
+  transform: translateX(75px);
+  opacity: 0;
+  transition: 500ms all ease;
+  transition-delay: 1200ms;
+}
+
+.slide-right-delay-7.reveal {
+  transform: translateX(75px);
+  opacity: 0;
+  transition: 500ms all ease;
+  transition-delay: 1400ms;
+}
+
+.slide-right-delay-8.reveal {
+  transform: translateX(75px);
+  opacity: 0;
+  transition: 500ms all ease;
+  transition-delay: 1600ms;
+}
+
+.slide-right-delay-9.reveal {
+  transform: translateX(75px);
+  opacity: 0;
+  transition: 500ms all ease;
+  transition-delay: 1800ms;
+}
+
+.slide-right-delay-10.reveal {
+  transform: translateX(75px);
+  opacity: 0;
+  transition: 500ms all ease;
+  transition-delay: 2000ms;
+}
+
+.slide-right-delay-11.reveal {
+  transform: translateX(75px);
+  opacity: 0;
+  transition: 500ms all ease;
+  transition-delay: 2200ms;
+}
+
+.slide-right-delay-12.reveal {
+  transform: translateX(75px);
+  opacity: 0;
+  transition: 500ms all ease;
+  transition-delay: 2400ms;
+}
+
+.reveal {
+  transform: translateX(75px);
+  opacity: 0;
+  transition: 500ms all ease;
+}
+
+.reveal.active {
+  transform: translate(0);
+  opacity: 1;
 }
