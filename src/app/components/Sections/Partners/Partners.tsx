@@ -9,9 +9,9 @@ import {
   ComingSoon,
 } from "./StyledPartners";
 import { PARTNERS } from "@/app/global/constants";
+import { Button, FlexCenter } from "../../Global/StyledGlobal";
 
 import Image from "next/image";
-import { Button, FlexCenter } from "../../Global/StyledGlobal";
 
 export const Partners: React.FC = () => {
   return (
@@ -26,7 +26,11 @@ export const Partners: React.FC = () => {
         <PartnersGrid container>
           {PARTNERS.map((partner, index) => {
             return (
-              <PartnerItem key={partner.label} spancolumn={3}>
+              <PartnerItem
+                key={partner.label}
+                spancolumn={3}
+                className={`slide-up-delay-${index + 1} reveal`}
+              >
                 {partner.path ? (
                   <Image
                     src={partner.path}

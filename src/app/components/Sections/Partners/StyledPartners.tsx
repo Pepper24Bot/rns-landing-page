@@ -26,6 +26,10 @@ export const PartnersGrid = styled(Grid)`
 export const PartnerItem = styled(Grid)`
   border: solid 1px rgb(255, 255, 255, 0.5);
   border-radius: 8px;
+
+  @media only screen and (max-width: 500px) {
+    grid-column: span 6;
+  }
 `;
 
 export const ComingSoon = styled(FlexCenter)`

@@ -5,6 +5,7 @@ import Main from "../components/Sections/Main/Main";
 import Features from "../components/Sections/Features/Features";
 import Steps from "../components/Sections/Steps/Steps";
 import Partners from "../components/Sections/Partners/Partners";
+import YourRns from "../components/Sections/YourRns/YourRns";
 
 export const Container = styled.div`
   padding-top: 100px;
@@ -41,6 +42,7 @@ export const Home: React.FC = () => {
       <Features />
       <Steps />
       <Partners />
+      <YourRns />
     </Container>
   );
 };

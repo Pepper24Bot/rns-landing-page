@@ -66,7 +66,7 @@ export const PARTNERS = [
     {
         label: 'RootNetwork',
         link: '',
-        path: '/images/partners/rootnetwork.svg'
+        path: '/images/partners/root-network.svg'
     },
     {
         label: 'Mark',
