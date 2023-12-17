@@ -14,7 +14,7 @@
   --default-font: Roboto Mono;
 
   --primary: #c2185b;
-  --secondary: #212121;
+  /* --secondary: #212121; */
 
   --xs-text: calc(8px + 0.4vmax);
   --sm-text: calc(8px + 0.5vmax);
@@ -32,7 +32,6 @@
   --page-width: 1200px;
 
   /* Fix dark and light mode */
-
   --background-main: #282828;
   --background-default: #1a1a1a;
   --background-dark: #181818;
