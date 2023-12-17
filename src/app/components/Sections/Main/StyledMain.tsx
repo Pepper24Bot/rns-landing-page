@@ -10,6 +10,7 @@ export const Container = styled(PageContent)`
 export const Content = styled.div`
   width: 85%;
   max-width: 750px;
+  position: relative;
 `;
 
 export const HeadingText = styled.p`

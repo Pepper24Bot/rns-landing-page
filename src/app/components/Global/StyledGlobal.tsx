@@ -80,7 +80,7 @@ export const Button = styled(BaseButton)`
 
 export const BaseFont = styled.p`
   font-size: var(--md-text);
-  font-weight: bold;
+  font-weight: 700;
   font-family: var(--default-font);
   line-height: normal;
 `;
@@ -105,4 +105,9 @@ export const SubTitle = styled(BaseFont)`
 
 export const ImageContainer = styled.div`
   width: 50%;
+`;
+
+export const BgContainer = styled.div`
+  position: absolute;
+  right: 0;
 `;

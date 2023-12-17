@@ -79,3 +79,35 @@ export const PARTNERS = [
         path: ''
     },
 ]
+
+export const FAQ = [
+    {
+        heading: 'What happens to the registration period if i sell my RNS or transfer it to a new wallet?',
+        subheading: `
+        The registration period carries over to the new owner/wallet. For the avoidance of doubt, if you have registered your ENS for 1 year and after 3 months decide to sell your TRS or transfer it to a new wallet then the remaining 9 months registration period carries over to the new owner/wallet.
+        `,
+        linkText: '',
+    },
+    {
+        heading: 'What tokens do I need to register an RNS?',
+        subheading: `
+        RNS currently allows the registration and renewal of your RNS in ROOT. ROOT is alsoathe token required for gas.
+        `,
+        linkText: '',
+    },
+    {
+        heading: 'What is the price of an RNS?',
+        subheading: `
+        RNS has a tiered pricing model that is priced in USDC and then converted to ROOT using pricing oracles based on the ROOT/USDC price at the time of purchase.
+
+        Pricing:
+
+        5+ letter/digit/emoji/symbol names per year - 5 USDC
+        4 letter/digit/emoji/symbol names per year - 50 USDC
+        3 letter/digit/emoji/symbol names per year - 150 USDC
+        2 letter/digit/emoji/symbol names per year - 350 USDC
+        1 letter/digit/emoji/symbol names per year - 750 USDC
+        `,
+        linkText: '',
+    },
+] 

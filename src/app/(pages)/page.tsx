@@ -6,6 +6,7 @@ import Features from "../components/Sections/Features/Features";
 import Steps from "../components/Sections/Steps/Steps";
 import Partners from "../components/Sections/Partners/Partners";
 import YourRns from "../components/Sections/YourRns/YourRns";
+import FrequentlyAskedQuestions from "../components/Sections/FAQ/Faq";
 
 const Container = styled.div`
   padding-top: 100px;
@@ -43,6 +44,7 @@ export default function Home() {
       <Steps />
       <Partners />
       <YourRns />
+      <FrequentlyAskedQuestions />
     </Container>
   );
 }

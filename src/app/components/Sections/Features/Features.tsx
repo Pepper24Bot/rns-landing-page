@@ -2,8 +2,9 @@ import React from "react";
 
 import Image from "next/image";
 
-import { Grid, ImageContainer, PageSection } from "../../Global/StyledGlobal";
+import { ImageContainer, PageSection } from "../../Global/StyledGlobal";
 import {
+  Container,
   FeatureContext,
   FeatureItem,
   FeatureTitle,
@@ -15,7 +16,7 @@ import { FEATURES } from "@/app/global/constants";
 export const Features: React.FC = () => {
   return (
     <PageSection>
-      <Grid container>
+      <Container container>
         <LeftPanel spancolumn={5}>
           <div>
             <FeatureContext className="slide-left reveal">
@@ -48,7 +49,7 @@ export const Features: React.FC = () => {
             })}
           </div>
         </RightPanel>
-      </Grid>
+      </Container>
     </PageSection>
   );
 };

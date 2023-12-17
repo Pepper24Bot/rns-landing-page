@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { FlexCenter, Title } from "../../Global/StyledGlobal";
 
 export const Container = styled(FlexCenter)`
-  background-color: var(--background-darkest);
+  background-color: var(--background-darker);
   padding: 64px 32px;
   width: 100%;
   min-height: calc(100vh - 100px);

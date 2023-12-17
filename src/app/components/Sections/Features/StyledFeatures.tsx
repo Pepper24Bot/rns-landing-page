@@ -1,13 +1,16 @@
 import styled from "styled-components";
 import { Grid } from "../../Global/StyledGlobal";
 
+export const Container = styled(Grid)`
+  position: relative;
+`;
+
 export const LeftPanel = styled(Grid)`
   display: flex;
   justify-content: end;
   align-items: center;
 
   background-color: var(--secondary);
-  // min-height: calc(100vh - 100px);
   padding: var(--lg-padding);
 
   @media only screen and (max-width: 650px) {
