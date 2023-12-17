@@ -12,8 +12,10 @@ export const YourRns: React.FC = () => {
   return (
     <Container>
       <div>
-        <RnsTitle>What does your RNS say about you?</RnsTitle>
-        <ImageContainer>
+        <RnsTitle className="slide-up reveal">
+          What does your RNS say about you?
+        </RnsTitle>
+        <ImageContainer className="slide-up reveal">
           <Image
             src="/images/legend-root.svg"
             alt="Your-RNS"
@@ -21,7 +23,7 @@ export const YourRns: React.FC = () => {
             height={300}
           />
         </ImageContainer>
-        <FlexCenter>
+        <FlexCenter className="slide-up reveal">
           <Button>Search Now</Button>
         </FlexCenter>
       </div>

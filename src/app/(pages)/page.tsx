@@ -7,11 +7,11 @@ import Steps from "../components/Sections/Steps/Steps";
 import Partners from "../components/Sections/Partners/Partners";
 import YourRns from "../components/Sections/YourRns/YourRns";
 
-export const Container = styled.div`
+const Container = styled.div`
   padding-top: 100px;
 `;
 
-export const Home: React.FC = () => {
+export default function Home() {
   const revealSection = () => {
     const revealElements = document.querySelectorAll(".reveal");
 
@@ -45,6 +45,4 @@ export const Home: React.FC = () => {
       <YourRns />
     </Container>
   );
-};
-
-export default Home;
+}
