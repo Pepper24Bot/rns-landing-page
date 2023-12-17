@@ -7,7 +7,7 @@
 @import "~@fontsource/roboto-mono/200.css";
 
 :root {
-  --foreground-rgb: 0 0 0;
+  /* --foreground-rgb: 0 0 0; */
   --background-start-rgb: 214 219 220;
   --background-end-rgb: 255 255 255;
 
@@ -31,7 +31,9 @@
   /* custom */
   --page-width: 1200px;
 
-  /* Fix dark and light mode */
+  /* TODO: Add dark and light mode handling*/
+  --foreground-rgb: 255 255 255;
+
   --background-main: #282828;
   --background-default: #1a1a1a;
   --background-dark: #181818;
