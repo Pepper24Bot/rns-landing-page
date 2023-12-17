@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import { NavigationBar, Container, ToolBar } from "./StyledNavigation";
+import {
+  NavigationBar,
+  Container,
+  ToolBar,
+  IconLink,
+} from "./StyledNavigation";
 import { BaseButton, ImageContainer } from "../Global/StyledGlobal";
 
 import Image from "next/image";
@@ -26,6 +31,18 @@ export const Header: React.FC = () => {
             />
           </ImageContainer>
           <ToolBar>
+            <IconLink
+              href="https://twitter.com/RootNameService"
+              target="_blank"
+            >
+              <i className="fa-brands fa-discord fa-xl" />
+            </IconLink>
+            <IconLink
+              href="https://twitter.com/RootNameService"
+              target="_blank"
+            >
+              <i className="fa-brands fa-x-twitter fa-xl" />
+            </IconLink>
             <BaseButton>Log In</BaseButton>
           </ToolBar>
         </NavigationBar>

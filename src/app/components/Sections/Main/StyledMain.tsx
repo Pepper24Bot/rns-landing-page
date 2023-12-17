@@ -1,5 +1,31 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { BaseButton, PageContent } from "../../Global/StyledGlobal";
+
+export const fadeIn = keyframes`
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+`;
+
+export const fadeInUp = keyframes`
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    20% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+
+    80% {
+        opacity: 1;
+    }
+`;
 
 export const Container = styled(PageContent)`
   min-height: calc(100vh - 100px);
@@ -11,6 +37,10 @@ export const Content = styled.div`
   width: 85%;
   max-width: 750px;
   position: relative;
+
+  animation: 7s ${fadeIn} ease-out;
+  animationdelay: 500ms;
+  animationfillmode: both;
 `;
 
 export const HeadingText = styled.p`
@@ -36,4 +66,8 @@ export const SearchButton = styled(BaseButton)`
   margin-top: 40px;
   padding: 12px 24px;
   width: 240px;
+
+  animation: 7s ${fadeInUp};
+  animationdelay: 1000ms;
+  animationfillmode: both;
 `;

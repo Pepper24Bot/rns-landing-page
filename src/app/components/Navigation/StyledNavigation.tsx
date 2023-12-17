@@ -36,3 +36,11 @@ export const VerticalDivider = styled(HorizontalDivider)`
   margin: 0 16px;
   height: 50px;
 `;
+
+export const IconLink = styled.a`
+  margin-right: 24px;
+
+  &:hover {
+    color: var(--primary);
+  }
+`;
