@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BaseFont, FlexCenter } from "../Global/StyledGlobal";
 
 export const Container = styled.div`
   min-height: 100vh;
@@ -16,8 +17,29 @@ export const Content = styled.div`
   margin: auto;
 `;
 
-export const Footer = styled.div`
+export const Footer = styled(FlexCenter)`
   background-color: rgba(0, 0, 0, 1);
   border-top: solid 1px rgba(255, 255, 255, 0.25);
-  height: 125px;
+  text-align: center;
+  padding: 24px;
+`;
+
+export const FooterText = styled(BaseFont)`
+  font-size: 16px;
+  margin-top: 24px;
+  padding: 4px;
+`;
+
+export const RightsText = styled(FooterText)`
+  font-weight: 200;
+  margin-top: 0;
+  opacity: 0.5;
+  font-style: italic;
+`;
+
+export const IconLink = styled.a`
+  margin: 24px 12px 0;
+  &:hover {
+    color: var(--primary);
+  }
 `;

@@ -82,16 +82,16 @@ export const PARTNERS = [
 
 export const FAQ = [
     {
-        heading: 'What happens to the registration period if i sell my RNS or transfer it to a new wallet?',
+        heading: 'What happens to the registration period if I sell my RNS or transfer it to a new wallet?',
         subheading: `
-        The registration period carries over to the new owner/wallet. For the avoidance of doubt, if you have registered your ENS for 1 year and after 3 months decide to sell your TRS or transfer it to a new wallet then the remaining 9 months registration period carries over to the new owner/wallet.
+        The registration period carries over to the new owner/wallet. For the avoidance of doubt, if you have registered your ENS for 1 year and after 3 months decide to sell your RNS or transfer it to a new wallet then the remaining 9 months registration period carries over to the new owner/wallet.
         `,
         linkText: '',
     },
     {
         heading: 'What tokens do I need to register an RNS?',
         subheading: `
-        RNS currently allows the registration and renewal of your RNS in ROOT. ROOT is alsoathe token required for gas.
+        RNS currently allows the registration and renewal of your RNS in ROOT. ROOT is also the token required for gas.
         `,
         linkText: '',
     },
