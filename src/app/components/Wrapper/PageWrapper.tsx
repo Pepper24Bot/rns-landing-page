@@ -5,10 +5,11 @@ import {
   Container,
   Content,
   Footer,
-  FooterText,
+  CopyrightText,
   IconLink,
   Page,
   RightsText,
+  FooterContent,
 } from "./StyledWrapper";
 import { FlexCenter } from "../Global/StyledGlobal";
 
@@ -33,28 +34,30 @@ export const PageWrapper: React.FC<WrapperProps> = (props: WrapperProps) => {
               width={450}
               height={60}
             />
-            <FooterText>© Copyright 2023</FooterText>
-            <RightsText>All Rights Reserved</RightsText>
-            <FlexCenter>
-              <IconLink
-                href="https://twitter.com/RootNameService"
-                target="_blank"
-              >
-                <i className="fa-brands fa-discord fa-xl" />
-              </IconLink>
-              <IconLink
-                href="https://twitter.com/RootNameService"
-                target="_blank"
-              >
-                <i className="fa-brands fa-x-twitter fa-xl" />
-              </IconLink>
-              <IconLink
-                href="https://twitter.com/RootNameService"
-                target="_blank"
-              >
-                <i className="fa-regular fa-envelope fa-xl" />
-              </IconLink>
-            </FlexCenter>
+            <FooterContent>
+              <CopyrightText>© Copyright 2023</CopyrightText>
+              <RightsText>All Rights Reserved</RightsText>
+              <FlexCenter>
+                <IconLink
+                  href="https://twitter.com/RootNameService"
+                  target="_blank"
+                >
+                  <i className="fa-brands fa-discord fa-xl" />
+                </IconLink>
+                <IconLink
+                  href="https://twitter.com/RootNameService"
+                  target="_blank"
+                >
+                  <i className="fa-brands fa-x-twitter fa-xl" />
+                </IconLink>
+                <IconLink
+                  href="https://twitter.com/RootNameService"
+                  target="_blank"
+                >
+                  <i className="fa-regular fa-envelope fa-xl" />
+                </IconLink>
+              </FlexCenter>
+            </FooterContent>
           </div>
         </Footer>
       </Page>

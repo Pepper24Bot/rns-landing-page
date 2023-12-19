@@ -13,7 +13,7 @@ export const Page = styled.div`
 `;
 
 export const Content = styled.div`
-  min-height: calc(100% - 200px);
+  // min-height: calc(100% - 200px);
   margin: auto;
 `;
 
@@ -24,17 +24,20 @@ export const Footer = styled(FlexCenter)`
   padding: 24px;
 `;
 
-export const FooterText = styled(BaseFont)`
+export const CopyrightText = styled(BaseFont)`
   font-size: 16px;
-  margin-top: 24px;
   padding: 4px;
 `;
 
-export const RightsText = styled(FooterText)`
+export const RightsText = styled(CopyrightText)`
   font-weight: 200;
   margin-top: 0;
   opacity: 0.5;
   font-style: italic;
+`;
+
+export const FooterContent = styled.div`
+  padding-top: 16px;
 `;
 
 export const IconLink = styled.a`
