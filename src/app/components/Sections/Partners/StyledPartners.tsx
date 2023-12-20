@@ -3,9 +3,9 @@ import { FlexCenter, Grid, SubTitle, Title } from "../../Global/StyledGlobal";
 
 export const Container = styled(FlexCenter)`
   background-color: var(--background-darkest);
-  padding: 64px 32px;
   width: 100%;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh);
+  padding: 24px 24px 64px 24px;
 `;
 
 export const Heading = styled.div`
@@ -15,7 +15,9 @@ export const Heading = styled.div`
 
 export const PartnersTitle = styled(Title)``;
 
-export const PartnersSubTitle = styled(SubTitle)``;
+export const PartnersSubTitle = styled(SubTitle)`
+  padding: 0 16px;
+`;
 
 export const PartnersGrid = styled(Grid)`
   grid-gap: 16px;

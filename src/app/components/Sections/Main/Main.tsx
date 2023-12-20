@@ -2,12 +2,14 @@ import React from "react";
 import {
   Container,
   Content,
+  ContentContainer,
   HeadingText,
   HighlightText,
   SearchButton,
+  BgContainer,
 } from "./StyledMain";
 
-import { BgContainer, PageSection } from "../../Global/StyledGlobal";
+import { PageSection } from "../../Global/StyledGlobal";
 import Image from "next/image";
 
 export const Main: React.FC = () => {
@@ -21,21 +23,23 @@ export const Main: React.FC = () => {
             width={400}
             height={340}
             style={{
-              width: "75vmax",
+              width: "50vmax",
               height: "100%",
-              opacity: 0.75,
+              opacity: 0.8,
             }}
           />
         </BgContainer>
-        <Content>
-          <HeadingText>
-            Dont be known as 0xFffFFF0000000000000000000000000000D4FR
-          </HeadingText>
-          <HeadingText>
-            Be known as <HighlightText>Legend.ROOT</HighlightText>
-          </HeadingText>
-          <SearchButton>Search Now</SearchButton>
-        </Content>
+        <ContentContainer>
+          <Content>
+            <HeadingText>
+              Dont be known as 0xFffFFF0000000000000000000000000000D4FR
+            </HeadingText>
+            <HeadingText>
+              Be known as <HighlightText>Legend.ROOT</HighlightText>
+            </HeadingText>
+            <SearchButton>Search Now</SearchButton>
+          </Content>
+        </ContentContainer>
       </Container>
     </PageSection>
   );

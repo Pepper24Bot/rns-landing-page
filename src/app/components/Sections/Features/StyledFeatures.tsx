@@ -3,6 +3,11 @@ import { Grid } from "../../Global/StyledGlobal";
 
 export const Container = styled(Grid)`
   position: relative;
+  min-height: 100vh;
+
+  @media only screen and (max-width: 650px) {
+    align-content: start;
+  }
 `;
 
 export const LeftPanel = styled(Grid)`
@@ -32,6 +37,7 @@ export const RightPanel = styled(Grid)`
   @media only screen and (max-width: 650px) {
     grid-column: span 12;
     justify-content: center;
+    align-items: start;
   }
 `;
 

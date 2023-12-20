@@ -15,4 +15,5 @@ export const RnsTitle = styled(Title)`
 
 export const ImageContainer = styled(FlexCenter)`
   padding: 72px 0;
+  box-shadow: var(--shadow-1);
 `;

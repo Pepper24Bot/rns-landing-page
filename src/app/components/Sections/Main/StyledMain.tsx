@@ -29,12 +29,44 @@ export const fadeInUp = keyframes`
 
 export const Container = styled(PageContent)`
   min-height: calc(100vh - 100px);
+  width: 100%;
   display: flex;
   align-items: center;
+
+  position: relative;
+  overflow: hidden;
+`;
+
+export const BgContainer = styled.div`
+  position: absolute;
+  opacity: 0.75;
+  right: 0;
+
+  @media only screen and (max-width: 800px) {
+    transform: scale(1.5, 2.1);
+  }
+
+  @media only screen and (min-width: 800px) and (max-width: 1000px) {
+    transform: scale(1.5, 2);
+  }
+
+  @media only screen and (min-width: 1000px) and (max-width: 1500px) {
+    transform: scale(1.5);
+  }
+
+  @media only screen and (min-width: 1500px) {
+    transform: scale(1.05);
+  }
+`;
+
+export const ContentContainer = styled.div`
+  max-width: var(--page-width);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
 `;
 
 export const Content = styled.div`
-  width: 85%;
   max-width: 750px;
   position: relative;
 
@@ -68,6 +100,6 @@ export const SearchButton = styled(BaseButton)`
   width: 240px;
 
   animation: 7s ${fadeInUp};
-  animationdelay: 1000ms;
-  animationfillmode: both;
+  animation-delay: 1000ms;
+  animation-fill-mode: both;
 `;

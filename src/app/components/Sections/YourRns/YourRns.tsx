@@ -1,10 +1,6 @@
 import React from "react";
 import { Container, ImageContainer, RnsTitle } from "./StyledYourRns";
-import {
-  Button,
-  FlexCenter,
-  HorizontalDivider,
-} from "../../Global/StyledGlobal";
+import { Button, FlexCenter } from "../../Global/StyledGlobal";
 
 import Image from "next/image";
 
@@ -19,8 +15,12 @@ export const YourRns: React.FC = () => {
           <Image
             src="/images/legend-root.svg"
             alt="Your-RNS"
-            width={300}
+            width={250}
             height={300}
+            style={{
+              borderRadius: "16px",
+              border: "solid 1px rgb(255, 255, 255, 0.2)",
+            }}
           />
         </ImageContainer>
         <FlexCenter className="slide-up reveal">

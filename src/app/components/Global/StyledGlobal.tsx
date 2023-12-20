@@ -107,7 +107,16 @@ export const ImageContainer = styled.div`
   width: 50%;
 `;
 
-export const BgContainer = styled.div`
-  position: absolute;
-  right: 0;
+export const SectionDivider = styled.div<{ direction?: string }>`
+  border: solid 1px rgb(255, 255, 255, 0.25);
+  max-width: 900px;
+  width: 85vw;
+  margin: 0 auto 128px auto;
+
+  transform: ${({ direction }) =>
+    direction === "to left up"
+      ? "rotate(3.5deg)"
+      : direction === "to right up"
+      ? "rotate(-3.5deg)"
+      : ""};
 `;
