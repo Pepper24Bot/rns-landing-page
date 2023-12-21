@@ -7,6 +7,7 @@ import Steps from "../components/Sections/Steps/Steps";
 import Partners from "../components/Sections/Partners/Partners";
 import YourRns from "../components/Sections/YourRns/YourRns";
 import FrequentlyAskedQuestions from "../components/Sections/FAQ/Faq";
+import Transaction from "../components/Sections/SendAndReceive/Transaction";
 
 const Container = styled.div`
   padding-top: 100px;
@@ -41,6 +42,7 @@ export default function Home() {
     <Container>
       <Main />
       <Features />
+      <Transaction />
       <Steps />
       <Partners />
       <YourRns />

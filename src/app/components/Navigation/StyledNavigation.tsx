@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {
-  HorizontalDivider,
+  VerticalDivider as Divider,
   FlexCenter,
   FlexJustified,
   FlexRight,
@@ -32,7 +32,7 @@ export const ToolBar = styled(FlexRight)`
   height: 100%;
 `;
 
-export const VerticalDivider = styled(HorizontalDivider)`
+export const VerticalDivider = styled(Divider)`
   margin: 0 16px;
   height: 50px;
 `;

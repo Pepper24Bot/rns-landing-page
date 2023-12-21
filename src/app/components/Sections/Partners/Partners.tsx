@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Container,
-  Heading,
   PartnerItem,
   PartnersSubTitle,
   PartnersTitle,
@@ -9,7 +8,12 @@ import {
   ComingSoon,
 } from "./StyledPartners";
 import { PARTNERS } from "@/app/global/constants";
-import { Button, SectionDivider, FlexCenter } from "../../Global/StyledGlobal";
+import {
+  Button,
+  SectionDivider,
+  FlexCenter,
+  Heading,
+} from "../../Global/StyledGlobal";
 
 import Image from "next/image";
 

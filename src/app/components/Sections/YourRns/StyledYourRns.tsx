@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FlexCenter, Title } from "../../Global/StyledGlobal";
+import { FlexCenter, PageTitle } from "../../Global/StyledGlobal";
 
 export const Container = styled(FlexCenter)`
   background-color: var(--background-darker);
@@ -8,7 +8,7 @@ export const Container = styled(FlexCenter)`
   min-height: 100vh;
 `;
 
-export const RnsTitle = styled(Title)`
+export const RnsTitle = styled(PageTitle)`
   max-width: 600px;
   text-align: center;
 `;

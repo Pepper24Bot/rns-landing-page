@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { BaseButton, PageContent } from "../../Global/StyledGlobal";
+import { BaseButton, FlexPageContent } from "../../Global/StyledGlobal";
 
 export const fadeIn = keyframes`
     0% {
@@ -27,11 +27,9 @@ export const fadeInUp = keyframes`
     }
 `;
 
-export const Container = styled(PageContent)`
+export const Container = styled(FlexPageContent)`
   min-height: calc(100vh - 100px);
   width: 100%;
-  display: flex;
-  align-items: center;
 
   position: relative;
   overflow: hidden;

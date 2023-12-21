@@ -9,6 +9,10 @@ export const FlexJustified = styled(Flex)`
   justify-content: space-between;
 `;
 
+export const FlexJustifiedBottom = styled(FlexJustified)`
+  align-items: end;
+`;
+
 export const FlexCenter = styled(Flex)`
   justify-content: center;
 `;
@@ -17,15 +21,22 @@ export const FlexRight = styled(Flex)`
   justify-content: right;
 `;
 
-export const HorizontalDivider = styled.div`
-  height: calc(100% - 16px);
+export const RelativeContainer = styled.div`
+  position: relative;
+`;
+
+export const VerticalDivider = styled.div`
   border-left: solid 1px var(--divider-color);
 `;
 
-export const VerticalDivider = styled.div<{ padding?: string }>`
+export const HorizontalDivider = styled.div<{
+  margin?: string;
+  thickness?: string;
+}>`
   width: 100%;
-  border-bottom: solid 1px var(--divider-color);
-  padding: ${({ padding }) => padding || 0};
+  height: ${({ thickness }) => thickness || "1px"};
+  background-color: rgba(255, 255, 255, 0.25);
+  ${({ margin }) => (margin ? `margin: ${margin} 0` : "")};
 `;
 
 export const PageSection = styled(FlexCenter)`
@@ -34,6 +45,11 @@ export const PageSection = styled(FlexCenter)`
 `;
 
 export const PageContent = styled.div`
+  width: var(--page-width);
+  padding: var(--md-padding);
+`;
+
+export const FlexPageContent = styled(FlexCenter)`
   width: var(--page-width);
   padding: var(--md-padding);
 `;
@@ -53,6 +69,11 @@ export const Grid = styled.div<{
       : ""};
   ${({ spancolumn }) => (spancolumn ? `grid-column: span ${spancolumn}` : "")};
   ${({ column }) => (column ? `grid-column: ${column}` : "")};
+`;
+
+export const Heading = styled.div`
+  text-align: center;
+  padding-bottom: 64px;
 `;
 
 export const BaseButton = styled.button`
@@ -85,7 +106,7 @@ export const BaseFont = styled.p`
   line-height: normal;
 `;
 
-export const Title = styled(BaseFont)`
+export const PageTitle = styled(BaseFont)`
   font-size: var(--xxl-text);
   text-transform: uppercase;
 
@@ -94,7 +115,7 @@ export const Title = styled(BaseFont)`
   }
 `;
 
-export const SubTitle = styled(BaseFont)`
+export const PageSubTitle = styled(BaseFont)`
   font-size: var(--lg-text);
   font-weight: 200;
 

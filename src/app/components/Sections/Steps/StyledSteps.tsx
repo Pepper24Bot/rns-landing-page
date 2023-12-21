@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FlexCenter, Title, SubTitle } from "../../Global/StyledGlobal";
+import { FlexCenter, PageTitle, PageSubTitle } from "../../Global/StyledGlobal";
 
 export const Container = styled(FlexCenter)`
   background-color: var(--darker);
@@ -30,12 +30,12 @@ export const FeatureItem = styled(FlexCenter)`
   align-items: start;
 `;
 
-export const StepTitle = styled(Title)`
+export const StepTitle = styled(PageTitle)`
   line-height: 48px;
   padding-bottom: 12px;
 `;
 
-export const StepSubTitle = styled(SubTitle)`
+export const StepSubTitle = styled(PageSubTitle)`
   max-width: 500px;
   font-weight: 200;
   opacity: 0.75;

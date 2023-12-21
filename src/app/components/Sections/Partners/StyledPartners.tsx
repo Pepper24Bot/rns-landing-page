@@ -1,5 +1,10 @@
 import styled from "styled-components";
-import { FlexCenter, Grid, SubTitle, Title } from "../../Global/StyledGlobal";
+import {
+  FlexCenter,
+  Grid,
+  PageSubTitle,
+  PageTitle,
+} from "../../Global/StyledGlobal";
 
 export const Container = styled(FlexCenter)`
   background-color: var(--background-darkest);
@@ -8,14 +13,9 @@ export const Container = styled(FlexCenter)`
   padding: 24px 24px 64px 24px;
 `;
 
-export const Heading = styled.div`
-  text-align: center;
-  padding-bottom: 64px;
-`;
+export const PartnersTitle = styled(PageTitle)``;
 
-export const PartnersTitle = styled(Title)``;
-
-export const PartnersSubTitle = styled(SubTitle)`
+export const PartnersSubTitle = styled(PageSubTitle)`
   padding: 0 16px;
 `;
 

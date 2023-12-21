@@ -22,7 +22,7 @@ export const QuestionItem = styled(Flex)<{ isFirst?: boolean }>`
   cursor: pointer;
 `;
 
-export const Heading = styled(BaseFont)`
+export const Title = styled(BaseFont)`
   text-align: start;
   font-size: 18px;
   width: 100%;
@@ -32,7 +32,7 @@ export const Heading = styled(BaseFont)`
   }
 `;
 
-export const SubHeading = styled(BaseFont)<{
+export const SubTitle = styled(BaseFont)<{
   isShowing?: boolean;
   contentHeight?: number | string;
 }>`

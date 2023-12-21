@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import {
   Container,
-  Heading,
+  Title,
   IconContainer,
   QuestionItem,
   Questions,
-  SubHeading,
+  SubTitle,
 } from "./StyledFaq";
-import { PageSection, Title } from "../../Global/StyledGlobal";
+import { PageSection, PageTitle } from "../../Global/StyledGlobal";
 import { FAQ } from "@/app/global/constants";
 
 export const FrequentlyAskedQuestions: React.FC = () => {
@@ -38,7 +38,7 @@ export const FrequentlyAskedQuestions: React.FC = () => {
   return (
     <PageSection>
       <Container>
-        <Title>FAQ</Title>
+        <PageTitle>FAQ</PageTitle>
         <Questions>
           {FAQ.map((faq, index) => {
             return (
@@ -61,14 +61,14 @@ export const FrequentlyAskedQuestions: React.FC = () => {
                   )}
                 </IconContainer>
                 <div>
-                  <Heading>{faq.heading}</Heading>
-                  <SubHeading
+                  <Title>{faq.heading}</Title>
+                  <SubTitle
                     isShowing={isActive[index]}
                     contentHeight={`${contentHeights[index]}px`}
                     id={`faq-content-${index}`}
                   >
                     {faq.subheading}
-                  </SubHeading>
+                  </SubTitle>
                 </div>
               </QuestionItem>
             );
