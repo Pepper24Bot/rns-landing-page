@@ -1,13 +1,32 @@
 import React from "react";
-import { Container, ImageContainer, RnsTitle } from "./StyledYourRns";
-import { Button, FlexCenter } from "../../Global/StyledGlobal";
+import {
+  Container,
+  ImageContainer,
+  RnsTitle,
+  BgContainer,
+  Content,
+  SearchButton,
+} from "./StyledYourRns";
+import { FlexCenter } from "../../Global/StyledGlobal";
 
 import Image from "next/image";
 
 export const YourRns: React.FC = () => {
   return (
     <Container>
-      <div>
+      <BgContainer>
+        <Image
+          src="/images/rns-bg-2.svg"
+          alt="Robo Labs Icon"
+          width={400}
+          height={340}
+          style={{
+            width: "50vmax",
+            opacity: 0.5,
+          }}
+        />
+      </BgContainer>
+      <Content>
         <RnsTitle className="slide-up reveal">
           What does your RNS say about you?
         </RnsTitle>
@@ -20,13 +39,14 @@ export const YourRns: React.FC = () => {
             style={{
               borderRadius: "16px",
               border: "solid 2px rgb(255, 255, 255, 0.2)",
+              boxShadow: "0px 8px 8px 16px rgba(0, 0, 0, 1)",
             }}
           />
         </ImageContainer>
         <FlexCenter className="slide-up reveal">
-          <Button>Search Now</Button>
+          <SearchButton>Search Now</SearchButton>
         </FlexCenter>
-      </div>
+      </Content>
     </Container>
   );
 };

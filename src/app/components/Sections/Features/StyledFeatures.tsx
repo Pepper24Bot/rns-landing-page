@@ -31,7 +31,6 @@ export const RightPanel = styled(Grid)`
   align-items: center;
 
   background-color: var(--background-darker);
-  // min-height: calc(100vh - 100px);
   padding: var(--lg-padding);
 
   @media only screen and (max-width: 650px) {

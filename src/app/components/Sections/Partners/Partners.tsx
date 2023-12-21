@@ -6,6 +6,7 @@ import {
   PartnersTitle,
   PartnersGrid,
   ComingSoon,
+  Content,
 } from "./StyledPartners";
 import { PARTNERS } from "@/app/global/constants";
 import {
@@ -36,16 +37,18 @@ export const Partners: React.FC = () => {
                 spancolumn={3}
                 className={`slide-up-delay-${index + 1} reveal`}
               >
-                {partner.path ? (
-                  <Image
-                    src={partner.path}
-                    alt={partner.label}
-                    width={225}
-                    height={300}
-                  />
-                ) : (
-                  <ComingSoon>More Coming Soon!</ComingSoon>
-                )}
+                <Content>
+                  {partner.path ? (
+                    <Image
+                      src={partner.path}
+                      alt={partner.label}
+                      width={225}
+                      height={300}
+                    />
+                  ) : (
+                    <ComingSoon>More Coming Soon!</ComingSoon>
+                  )}
+                </Content>
               </PartnerItem>
             );
           })}
