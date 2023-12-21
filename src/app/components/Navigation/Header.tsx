@@ -2,8 +2,12 @@ import React, { useState } from "react";
 import {
   NavigationBar,
   Container,
-  ToolBar,
+  DesktopLayout,
   IconLink,
+  MobileLayout,
+  Menu,
+  MenuLink,
+  MenuContainer,
 } from "./StyledNavigation";
 import { BaseButton, ImageContainer } from "../Global/StyledGlobal";
 
@@ -11,6 +15,7 @@ import Image from "next/image";
 
 export const Header: React.FC = () => {
   const [isTop, setIsTop] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   if (typeof window !== "undefined") {
     window.onscroll = function () {
@@ -25,12 +30,12 @@ export const Header: React.FC = () => {
           <ImageContainer>
             <Image
               src="/images/rns.svg"
-              alt="RNS Icon" 
+              alt="RNS Icon"
               width={450}
               height={60}
             />
           </ImageContainer>
-          <ToolBar>
+          <DesktopLayout>
             <IconLink
               href="https://twitter.com/RootNameService"
               target="_blank"
@@ -44,7 +49,50 @@ export const Header: React.FC = () => {
               <i className="fa-brands fa-x-twitter fa-xl" />
             </IconLink>
             <BaseButton>Log In</BaseButton>
-          </ToolBar>
+          </DesktopLayout>
+          <MobileLayout>
+            <button
+              onClick={() => {
+                setIsMenuOpen(!isMenuOpen);
+              }}
+            >
+              {isMenuOpen ? (
+                <i className="fa-solid fa-bars-staggered fa-xl"></i>
+              ) : (
+                <i className="fa-solid fa-bars fa-xl" />
+              )}
+            </button>
+            {isMenuOpen && (
+              <MenuContainer
+                onClick={() => {
+                  setIsMenuOpen(!isMenuOpen);
+                }}
+              >
+                <Menu>
+                  <MenuLink
+                    divider
+                    href="https://twitter.com/RootNameService"
+                    target="_blank"
+                  >
+                    Discord
+                  </MenuLink>
+                  <MenuLink
+                    divider
+                    href="https://twitter.com/RootNameService"
+                    target="_blank"
+                  >
+                    Twitter
+                  </MenuLink>
+                  <MenuLink
+                    href="https://twitter.com/RootNameService"
+                    target="_blank"
+                  >
+                    Login
+                  </MenuLink>
+                </Menu>
+              </MenuContainer>
+            )}
+          </MobileLayout>
         </NavigationBar>
       </Container>
     </div>

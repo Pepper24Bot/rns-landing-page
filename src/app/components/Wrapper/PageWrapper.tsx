@@ -51,7 +51,7 @@ export const PageWrapper: React.FC<WrapperProps> = (props: WrapperProps) => {
                   <i className="fa-brands fa-x-twitter fa-xl" />
                 </IconLink>
                 <IconLink
-                  href="https://twitter.com/RootNameService"
+                  href="mailto:support@rootnameservice.com"
                   target="_blank"
                 >
                   <i className="fa-regular fa-envelope fa-xl" />

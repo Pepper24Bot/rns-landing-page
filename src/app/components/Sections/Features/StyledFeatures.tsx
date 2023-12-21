@@ -3,7 +3,10 @@ import { Grid } from "../../Global/StyledGlobal";
 
 export const Container = styled(Grid)`
   position: relative;
-  min-height: 100vh;
+
+  @media only screen and (min-width: 650px) {
+    min-height: 100vh;
+  }
 
   @media only screen and (max-width: 650px) {
     align-content: start;

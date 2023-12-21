@@ -35,7 +35,7 @@ export const Container = styled(PageContent)`
   padding: 128px var(--lg-padding);
 
   @media only screen and (max-width: 500px) {
-    padding: 32px var(--lg-padding) 128px var(--lg-padding);
+    padding: 64px var(--lg-padding) 128px var(--lg-padding);
   }
 `;
 

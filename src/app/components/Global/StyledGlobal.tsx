@@ -107,7 +107,7 @@ export const BaseFont = styled.p`
 `;
 
 export const PageTitle = styled(BaseFont)`
-  font-size: var(--xxl-text);
+  font-size: var(--xl-text);
   text-transform: uppercase;
 
   @media only screen and (min-width: 1000px) {
@@ -125,7 +125,7 @@ export const PageSubTitle = styled(BaseFont)`
 `;
 
 export const ImageContainer = styled.div`
-  width: 50%;
+  width: 60%;
 `;
 
 export const SectionDivider = styled.div<{ direction?: string }>`
