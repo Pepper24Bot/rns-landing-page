@@ -1,10 +1,34 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import {
   BaseButton,
   Flex,
   PageContent,
   RelativeContainer,
 } from "../../Global/StyledGlobal";
+
+export const glow = keyframes`
+  from {
+    box-shadow: 0 0 8px -2px rgb(194, 24, 91, 0.75);
+  }
+  to {
+    box-shadow: 0 0 8px 2px rgb(194, 24, 91, 0.25);
+  }
+`;
+
+export const rotate = keyframes`
+  100% {
+		transform: rotate(1turn);
+	}
+`;
+
+export const opacityChange = keyframes`
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
 
 export const Container = styled(PageContent)`
   min-height: calc(100vh - 100px);
@@ -16,10 +40,41 @@ export const Container = styled(PageContent)`
 `;
 
 export const TransactionCard = styled.div`
-  max-width: 600px;
-  width: 100%;
-  border: solid 1px rgb(255, 255, 255, 0.2);
+  position: relative;
+  z-index: 0;
   border-radius: 8px;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: rgba(255, 255, 255, 0.25);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: conic-gradient(
+      transparent,
+      rgba(255, 255, 255, 1),
+      transparent 30%
+    );
+    animation: ${rotate} 4s linear infinite;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 1px;
+    top: 1px;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    background: #000;
+    border-radius: 8px;
+  }
 `;
 
 export const CardHeader = styled(Flex)`

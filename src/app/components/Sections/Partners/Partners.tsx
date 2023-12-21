@@ -9,12 +9,7 @@ import {
   Content,
 } from "./StyledPartners";
 import { PARTNERS } from "@/app/global/constants";
-import {
-  Button,
-  SectionDivider,
-  FlexCenter,
-  Heading,
-} from "../../Global/StyledGlobal";
+import { Button, FlexCenter, Heading } from "../../Global/StyledGlobal";
 
 import Image from "next/image";
 
@@ -22,7 +17,6 @@ export const Partners: React.FC = () => {
   return (
     <Container>
       <div>
-        <SectionDivider />
         <Heading>
           <PartnersTitle>Partners Platforms</PartnersTitle>
           <PartnersSubTitle>

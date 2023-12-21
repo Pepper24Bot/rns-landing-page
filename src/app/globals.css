@@ -13,7 +13,7 @@
 
   --default-font: Roboto Mono;
 
-  --primary: #c2185b;
+  --primary: #c2185b; /* rgb(194,24,91) */
   /* --secondary: #212121; */
 
   --xs-text: calc(8px + 0.4vmax);
