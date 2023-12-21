@@ -30,9 +30,9 @@ export const fadeInUp = keyframes`
 export const Container = styled(FlexPageContent)`
   min-height: calc(100vh - 100px);
   width: 100%;
-
   position: relative;
   overflow: hidden;
+  padding: var(--lg-padding);
 `;
 
 export const BgContainer = styled.div`
@@ -61,7 +61,6 @@ export const ContentContainer = styled.div`
   max-width: var(--page-width);
   width: 100%;
   margin: 0 auto;
-  padding: 0 16px;
 `;
 
 export const Content = styled.div`

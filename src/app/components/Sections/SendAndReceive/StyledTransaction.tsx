@@ -8,7 +8,7 @@ import {
 
 export const Container = styled(PageContent)`
   min-height: calc(100vh - 100px);
-  padding: 128px 32px;
+  padding: 128px var(--lg-padding) 32px var(--lg-padding);
 `;
 
 export const TransactionCard = styled.div`

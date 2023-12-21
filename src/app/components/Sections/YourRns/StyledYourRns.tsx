@@ -3,7 +3,7 @@ import { FlexCenter, PageTitle } from "../../Global/StyledGlobal";
 
 export const Container = styled(FlexCenter)`
   background-color: var(--background-darker);
-  padding: 64px 32px;
+  padding: 64px var(--lg-padding);
   width: 100%;
   min-height: 100vh;
 `;

@@ -10,7 +10,7 @@ export const Container = styled(FlexCenter)`
   background-color: var(--background-darkest);
   width: 100%;
   min-height: calc(100vh);
-  padding: 24px 24px 64px 24px;
+  padding: 24px var(--lg-padding) 64px var(--lg-padding);
 `;
 
 export const PartnersTitle = styled(PageTitle)``;

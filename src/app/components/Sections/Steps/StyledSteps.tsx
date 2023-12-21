@@ -3,7 +3,7 @@ import { FlexCenter, PageTitle, PageSubTitle } from "../../Global/StyledGlobal";
 
 export const Container = styled(FlexCenter)`
   background-color: var(--darker);
-  padding: 64px 32px;
+  padding: 64px var(--lg-padding);
   width: 100%;
   min-height: calc(100vh - 100px);
 `;
@@ -33,6 +33,18 @@ export const FeatureItem = styled(FlexCenter)`
 export const StepTitle = styled(PageTitle)`
   line-height: 48px;
   padding-bottom: 12px;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 24px;
+  }
+
+  @media only screen and (min-width: 600px) and (max-width: 1200px) {
+    font-size: 36px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 48px;
+  }
 `;
 
 export const StepSubTitle = styled(PageSubTitle)`

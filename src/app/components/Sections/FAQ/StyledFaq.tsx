@@ -3,15 +3,14 @@ import { BaseFont, Flex } from "../../Global/StyledGlobal";
 
 export const Container = styled.div`
   background-color: var(--background-darkest);
-  padding: 64px 16px;
+  padding: 64px var(--lg-padding);
   min-height: calc(100vh - 100px);
   text-align: center;
 `;
 
 export const Questions = styled.div`
   max-width: var(--page-width);
-  padding: 16px;
-  margin: 64px 16px 16px 16px;
+  padding: 64px 0;
 `;
 
 export const QuestionItem = styled(Flex)<{ isFirst?: boolean }>`
