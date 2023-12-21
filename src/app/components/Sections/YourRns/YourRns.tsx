@@ -19,7 +19,7 @@ export const YourRns: React.FC = () => {
             height={300}
             style={{
               borderRadius: "16px",
-              border: "solid 1px rgb(255, 255, 255, 0.2)",
+              border: "solid 2px rgb(255, 255, 255, 0.2)",
             }}
           />
         </ImageContainer>

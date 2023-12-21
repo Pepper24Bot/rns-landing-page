@@ -17,7 +17,7 @@ export const Features: React.FC = () => {
   return (
     <PageSection>
       <Container container>
-        <LeftPanel spancolumn={5}>
+        <LeftPanel spancolumn={4}>
           <div>
             <FeatureContext className="slide-left reveal">
               Connect your
@@ -35,7 +35,7 @@ export const Features: React.FC = () => {
             </FeatureContext>
           </div>
         </LeftPanel>
-        <RightPanel spancolumn={7}>
+        <RightPanel spancolumn={8}>
           <div>
             {FEATURES.map((feature, index) => {
               return (

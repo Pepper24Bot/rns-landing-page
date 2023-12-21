@@ -25,7 +25,7 @@ export const Header: React.FC = () => {
           <ImageContainer>
             <Image
               src="/images/rns.svg"
-              alt="RNS Icon"
+              alt="RNS Icon" 
               width={450}
               height={60}
             />

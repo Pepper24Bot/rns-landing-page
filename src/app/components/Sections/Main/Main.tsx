@@ -35,7 +35,7 @@ export const Main: React.FC = () => {
               Dont be known as 0xFffFFF0000000000000000000000000000D4FR
             </HeadingText>
             <HeadingText>
-              Be known as <HighlightText>Legend.ROOT</HighlightText>
+              Be known as <HighlightText>LEGEND.ROOT</HighlightText>
             </HeadingText>
             <SearchButton>Search Now</SearchButton>
           </Content>

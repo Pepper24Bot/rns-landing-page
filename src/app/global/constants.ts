@@ -7,7 +7,7 @@ export const FEATURES = [
         hightlights: []
     },
     {
-        title: 'Communications Identity',
+        title: 'Data & Social Graph Identity',
         content: '',
         hightlights: []
     },
@@ -17,7 +17,7 @@ export const FEATURES = [
         hightlights: []
     },
     {
-        title: 'Setting Root Network Naming Standards',
+        title: 'Setting The Root Network Naming Standards',
         content: '',
         hightlights: []
     },
@@ -103,9 +103,13 @@ export const FAQ = [
         Pricing:
 
         5+ letter/digit/emoji/symbol names per year - 5 USDC
+
         4 letter/digit/emoji/symbol names per year - 50 USDC
+
         3 letter/digit/emoji/symbol names per year - 150 USDC
+
         2 letter/digit/emoji/symbol names per year - 350 USDC
+        
         1 letter/digit/emoji/symbol names per year - 750 USDC
         `,
         linkText: '',
