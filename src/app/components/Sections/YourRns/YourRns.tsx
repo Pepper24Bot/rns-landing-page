@@ -27,12 +27,12 @@ export const YourRns: React.FC = () => {
         />
       </BgContainer>
       <Content>
-        <RnsTitle className="slide-up reveal">
+        <RnsTitle className="slide-up-delay-1 reveal">
           What does your RNS say about you?
         </RnsTitle>
-        <ImageContainer className="slide-up reveal">
+        <ImageContainer className="slide-up-delay-2 reveal">
           <Image
-            src="/images/legend-root.svg"
+            src="/images/legend-root.png"
             alt="Your-RNS"
             width={250}
             height={300}

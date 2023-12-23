@@ -11,7 +11,7 @@ export const glow = keyframes`
     box-shadow: 0 0 8px -2px rgb(194, 24, 91, 0.75);
   }
   to {
-    box-shadow: 0 0 8px 2px rgb(194, 24, 91, 0.25);
+    box-shadow: 0 0 8px 2px rgb(194, 24, 91, 0.75);
   }
 `;
 

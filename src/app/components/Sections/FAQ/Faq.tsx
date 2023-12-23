@@ -38,7 +38,7 @@ export const FrequentlyAskedQuestions: React.FC = () => {
   return (
     <PageSection>
       <Container>
-        <PageTitle>FAQ</PageTitle>
+        <PageTitle className="slide-up-delay-1 reveal">FAQ</PageTitle>
         <Questions>
           {FAQ.map((faq, index) => {
             return (

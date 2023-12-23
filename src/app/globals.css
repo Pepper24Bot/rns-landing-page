@@ -169,6 +169,20 @@ button {
   transition-delay: 1000ms;
 }
 
+.slide-up-delay-7.reveal {
+  transform: translateY(50px);
+  opacity: 0;
+  transition: 500ms all ease;
+  transition-delay: 1200ms;
+}
+
+.slide-up-delay-8.reveal {
+  transform: translateY(50px);
+  opacity: 0;
+  transition: 500ms all ease;
+  transition-delay: 1400ms;
+}
+
 .slide-left-delay-1.reveal {
   transform: translateX(-50px);
   opacity: 0;

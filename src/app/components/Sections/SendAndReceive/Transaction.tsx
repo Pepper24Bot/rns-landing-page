@@ -35,15 +35,17 @@ export const Transaction: React.FC = () => {
     <PageSection>
       <Container>
         <Heading>
-          <PageTitle>Send And Receive Using RNS</PageTitle>
-          <PageSubTitle>
+          <PageTitle className="slide-right-delay-1 reveal">
+            Send And Receive Using RNS
+          </PageTitle>
+          <PageSubTitle className="slide-left-delay-1 reveal">
             Dont waste time searching for your FuturePass or Root Network wallet
-            address, simple register an RNS, attach it to your desired wallet
+            address, simply register an RNS, attach it to your desired wallet
             address and presto! Now you can send and receive using your RNS!
           </PageSubTitle>
         </Heading>
         <FlexCenter>
-          <TransactionCard>
+          <TransactionCard className="slide-up-delay-1 reveal">
             <CardHeader>
               <SendIcon className="fa-regular fa-paper-plane" />
               <CardText>Send Token</CardText>

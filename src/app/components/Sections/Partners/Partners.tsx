@@ -18,8 +18,10 @@ export const Partners: React.FC = () => {
     <Container>
       <div>
         <Heading>
-          <PartnersTitle>Partners Platforms</PartnersTitle>
-          <PartnersSubTitle>
+          <PartnersTitle className="slide-left-delay-1 reveal">
+            Partners Platforms
+          </PartnersTitle>
+          <PartnersSubTitle className="slide-right-delay-2 reveal">
             The following partner platforms support RNS
           </PartnersSubTitle>
         </Heading>
@@ -31,18 +33,20 @@ export const Partners: React.FC = () => {
                 spancolumn={3}
                 className={`slide-up-delay-${index + 1} reveal`}
               >
-                <Content>
-                  {partner.path ? (
-                    <Image
-                      src={partner.path}
-                      alt={partner.label}
-                      width={225}
-                      height={300}
-                    />
-                  ) : (
-                    <ComingSoon>More Coming Soon!</ComingSoon>
-                  )}
-                </Content>
+                <a href={partner.link} target="_blank">
+                  <Content>
+                    {partner.path ? (
+                      <Image
+                        src={partner.path}
+                        alt={partner.label}
+                        width={225}
+                        height={300}
+                      />
+                    ) : (
+                      <ComingSoon>More Coming Soon!</ComingSoon>
+                    )}
+                  </Content>
+                </a>
               </PartnerItem>
             );
           })}

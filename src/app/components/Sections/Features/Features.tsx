@@ -24,7 +24,7 @@ export const Features: React.FC = () => {
             </FeatureContext>
             <ImageContainer className="slide-right reveal">
               <Image
-                src="/images/rns-logo.svg"
+                src="/images/rns-logo-2.png"
                 alt="RNS Icon"
                 width={240}
                 height={110}

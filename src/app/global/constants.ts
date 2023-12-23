@@ -60,24 +60,39 @@ export const STEPS: Step[] = [
 export const PARTNERS = [
     {
         label: 'Partner1',
-        link: '',
-        path: '/images/partners/partner1.svg'
+        link: 'https://futurepass.futureverse.app/',
+        path: '/images/partners/future-pass.png'
     },
     {
         label: 'RootNetwork',
-        link: '',
-        path: '/images/partners/root-network.svg'
+        link: 'https://www.therootnetwork.com/',
+        path: '/images/partners/root-network.png'
+    },
+    {
+        label: 'Sylo',
+        link: 'https://www.sylo.io/',
+        path: '/images/partners/sylo.png'
     },
     {
         label: 'Mark',
-        link: '',
-        path: '/images/partners/mark.svg'
+        link: 'https://mark.halolab.io/',
+        path: '/images/partners/mark.png'
     },
     {
-        label: 'More coming soon',
-        link: '',
-        path: ''
+        label: 'Moai',
+        link: 'https://moai-finance.xyz/',
+        path: '/images/partners/moai.png'
     },
+    {
+        label: 'Dexter',
+        link: 'https://app.dexter.trade/swap',
+        path: '/images/partners/dexter.png'
+    },
+    {
+        label: 'Coming Soon',
+        link: '',
+        path: '/images/partners/coming-soon.png'
+    }
 ]
 
 export const FAQ = [
@@ -102,15 +117,15 @@ export const FAQ = [
 
         Pricing:
 
-        5+ letter/digit/emoji/symbol names per year - 5 USDC
+        5+ letter/digit/emoji/symbol names per year - 5 USDC equivalent paid in ROOT.
 
-        4 letter/digit/emoji/symbol names per year - 50 USDC
+        4 letter/digit/emoji/symbol names per year - 50 USDC equivalent paid in ROOT.
 
-        3 letter/digit/emoji/symbol names per year - 150 USDC
+        3 letter/digit/emoji/symbol names per year - 150 USDC equivalent paid in ROOT.
 
-        2 letter/digit/emoji/symbol names per year - 350 USDC
+        2 letter/digit/emoji/symbol names per year - 350 USDC equivalent paid in ROOT.
         
-        1 letter/digit/emoji/symbol names per year - 750 USDC
+        1 letter/digit/emoji/symbol names per year - 750 USDC equivalent paid in ROOT.
         `,
         linkText: '',
     },

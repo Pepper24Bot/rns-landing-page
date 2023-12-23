@@ -29,10 +29,10 @@ export const PageWrapper: React.FC<WrapperProps> = (props: WrapperProps) => {
         <Footer>
           <div>
             <Image
-              src="/images/rns-logo-2.svg"
+              src="/images/rns-logo-3.png"
               alt="RNS Icon"
-              width={450}
-              height={60}
+              width={400}
+              height={30}
             />
             <FooterContent>
               <CopyrightText>© Copyright 2023</CopyrightText>

@@ -37,14 +37,13 @@ export const Content = styled(Grid)`
   height: 100%;
 
   &:hover {
-    border: none;
     transform: translateY(-25px);
     transition: 400ms all ease;
   }
 `;
 
 export const ComingSoon = styled(FlexCenter)`
-  background-color: rgb(255, 255, 255, 0.2);
+  background-color: var(--background-main);
   height: 100%;
   border-radius: 8px;
 `;

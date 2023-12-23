@@ -29,10 +29,10 @@ export const Header: React.FC = () => {
         <NavigationBar>
           <ImageContainer>
             <Image
-              src="/images/rns.svg"
+              src="/images/rns-logo-1.png"
               alt="RNS Icon"
-              width={450}
-              height={60}
+              width={350}
+              height={30}
             />
           </ImageContainer>
           <DesktopLayout>
