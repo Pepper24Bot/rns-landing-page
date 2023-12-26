@@ -15,7 +15,7 @@ export const Questions = styled.div`
 
 export const QuestionItem = styled(Flex)<{ isFirst?: boolean }>`
   border-bottom: solid 1px;
-  padding: 16px 16px 16px 0;
+  padding: 16px 8px;
   max-width: 900px;
   ${({ isFirst }) => (isFirst ? "border-top: solid 1px;" : "")};
   cursor: pointer;
@@ -48,6 +48,6 @@ export const SubTitle = styled(BaseFont)<{
 
 export const IconContainer = styled.div`
   align-self: start;
-  margin: 16px;
+  margin: 16px 8px 16px 0;
   min-width: 24px;
 `;
