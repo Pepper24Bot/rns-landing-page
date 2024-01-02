@@ -58,7 +58,7 @@ export const TransactionCard = styled.div`
     background-position: 0 0;
     background-image: conic-gradient(
       transparent,
-      rgba(255, 255, 255, 1),
+      var(--primary),
       transparent 30%
     );
     animation: ${rotate} 4s linear infinite;
@@ -157,9 +157,15 @@ export const SendIcon = styled.i`
 export const SendButton = styled(BaseButton)<{ disabled?: boolean }>`
   border-radius: 24px;
   text-transform: capitalize;
+  color: rgb(255, 255, 255, 0.5);
 
   ${({ disabled }) =>
     disabled ? `background-color: var(--background-main)` : ""};
+
+  &:hover {
+    background-color: var(--background-main);
+    color: rgb(255, 255, 255, 0.5);
+  }
 `;
 
 export const CancelButton = styled(SendButton)`
@@ -168,6 +174,6 @@ export const CancelButton = styled(SendButton)`
 
   &:hover {
     background-color: transparent;
-    color: var(--primary);
+    color: var(--contrast-text);
   }
 `;

@@ -29,7 +29,7 @@ import {
 
 export const Transaction: React.FC = () => {
   const [amount, setAmount] = useState("");
-  const [futurePass, setFuturePass] = useState("Legend.ROOT");
+  const [futurePass, setFuturePass] = useState("legend.root");
 
   return (
     <PageSection>
@@ -77,6 +77,7 @@ export const Transaction: React.FC = () => {
                   </InputPlaceholder>
                   <InputField
                     id="FuturePass"
+                    disabled // remove this if wanted the form to be interactive
                     type="text"
                     placeholder="FuturePass or Wallet Address"
                     value={futurePass}
@@ -92,6 +93,7 @@ export const Transaction: React.FC = () => {
                   </InputPlaceholder>
                   <InputField
                     id="Amount"
+                    disabled // remove this if wanted the form to be interactive
                     type="text"
                     placeholder="Amount"
                     value={amount}
@@ -104,10 +106,8 @@ export const Transaction: React.FC = () => {
                 </Field>
               </div>
               <FlexRight>
-                <CancelButton>Cancel</CancelButton>
-                <SendButton disabled={amount === "" || futurePass === ""}>
-                  Send
-                </SendButton>
+                <CancelButton disabled>Cancel</CancelButton>
+                <SendButton disabled>Send</SendButton>
               </FlexRight>
             </CardContent>
           </TransactionCard>
