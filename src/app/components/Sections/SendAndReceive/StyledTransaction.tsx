@@ -51,7 +51,7 @@ export const TransactionCard = styled.div`
     z-index: -2;
     left: -50%;
     top: -50%;
-    width: 200%;
+    width: 250%;
     height: 200%;
     background-color: rgba(255, 255, 255, 0.25);
     background-repeat: no-repeat;
@@ -105,6 +105,10 @@ export const InputField = styled.input.attrs(() => ({
   padding: 16px;
   margin: 8px 0 4px 0;
   width: 100%;
+
+  &:disabled {
+    opacity: 1;
+  }
 
   &::placeholder {
     opacity: 0.5;
