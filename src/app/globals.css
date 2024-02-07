@@ -19,6 +19,8 @@
   --secondary-font: Roboto;
 
   --primary: #c2185b; /* rgb(194,24,91) */
+  --primary-dark: #540624; /* rgb(84,6,36) */
+  --primary-darkest: #100208; /* rgb(16,2,8) */
   /* --secondary: #212121; */
 
   --xs-text: calc(8px + 0.4vmax);

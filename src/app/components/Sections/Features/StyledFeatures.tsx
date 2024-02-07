@@ -32,8 +32,6 @@ export const RightPanel = styled(Grid)`
   display: flex;
   justify-content: start;
   align-items: center;
-
-  background-color: var(--background-darker);
   padding: var(--lg-padding);
 
   @media only screen and (max-width: 650px) {
@@ -52,7 +50,7 @@ export const FeatureContext = styled.p`
 `;
 
 export const FeatureItem = styled.div`
-  border: solid 2px var(--primary);
+  border: solid 1px var(--primary);
   padding: 12px 24px;
   margin: 16px 0;
   max-width: 900px;

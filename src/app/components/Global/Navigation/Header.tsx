@@ -3,13 +3,13 @@ import {
   NavigationBar,
   Container,
   DesktopLayout,
-  IconLink,
   MobileLayout,
   Menu,
   MenuLink,
   MenuContainer,
+  VerticalDivider,
 } from "./StyledNavigation";
-import { BaseButton, ImageContainer } from "../Global/StyledGlobal";
+import { BaseButton, ImageContainer, IconLink } from "../StyledGlobal";
 
 import Image from "next/image";
 
@@ -40,14 +40,15 @@ export const Header: React.FC = () => {
               href="https://twitter.com/RootNameService"
               target="_blank"
             >
-              <i className="fa-brands fa-discord fa-xl" />
+              <i className="fa-brands fa-discord fa-lg" />
             </IconLink>
             <IconLink
               href="https://twitter.com/RootNameService"
               target="_blank"
             >
-              <i className="fa-brands fa-x-twitter fa-xl" />
+              <i className="fa-brands fa-x-twitter fa-lg" />
             </IconLink>
+            <VerticalDivider />
             <BaseButton>Log In</BaseButton>
           </DesktopLayout>
           <MobileLayout>

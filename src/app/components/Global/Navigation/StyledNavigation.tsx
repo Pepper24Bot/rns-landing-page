@@ -4,26 +4,30 @@ import {
   FlexCenter,
   FlexJustified,
   FlexRight,
-} from "../Global/StyledGlobal";
+  IconLink,
+} from "../StyledGlobal";
 
 export const Container = styled(FlexCenter)<{ isTop?: boolean }>`
   position: fixed;
   width: 100%;
   height: 100px;
   z-index: 100;
-  background-color: var(--background-darkest);
   box-shadow: var(--shadow-1);
-  border-bottom: ${({ isTop }) =>
-    isTop ? "solid 1px var(--secondary)" : "none"};
+
   border-bottom: solid 1px
-    ${({ isTop }) =>
-      isTop ? "rgb(255,255,255,0.75)" : "rgb(255,255,255,0.25)"};
+    ${({ isTop }) => (isTop ? "rgb(84,6,36)" : "rgb(84,6,36,0.5)")};
+  background-color: ${({ isTop }) =>
+    isTop ? "var(--background-darkest)" : "rgb(16,2,8)"};
 `;
 
 export const NavigationBar = styled(FlexJustified)`
   padding: 16px 24px;
   max-width: var(--page-width);
   width: 100%;
+
+  @media only screen and (min-width: 1200px) {
+    padding: 16px 0;
+  }
 `;
 
 export const DesktopLayout = styled(FlexRight)`
@@ -43,7 +47,9 @@ export const MobileLayout = styled(FlexRight)`
 
 export const VerticalDivider = styled(Divider)`
   margin: 0 16px;
-  height: 50px;
+  height: 30px;
+  width: 1px;
+  background-color: rgb(194, 24, 91, 0.2); // primary
 `;
 
 export const MenuContainer = styled.div`
@@ -63,14 +69,6 @@ export const Menu = styled.div`
   padding: 8px 16px;
   background-color: var(--background-dark);
   border-radius: 4px;
-`;
-
-export const IconLink = styled.a`
-  margin-right: 24px;
-
-  &:hover {
-    color: var(--primary);
-  }
 `;
 
 export const MenuLink = styled(IconLink)<{ divider?: boolean }>`

@@ -53,7 +53,7 @@ export const BgContainer = styled.div`
   }
 
   @media only screen and (min-width: 1000px) and (max-width: 1500px) {
-    transform: scale(1.5, 1.75);
+    transform: scale(1.5, 1.25);
   }
 
   @media only screen and (min-width: 1500px) {
@@ -99,6 +99,14 @@ export const SearchButton = styled(BaseButton)`
   margin-top: 40px;
   padding: 12px 24px;
   width: 240px;
+
+  background-color: var(--secondary);
+  color: var(--background-darkest);
+
+  &:hover {
+    color: var(--contrast-text);
+    background-color: var(--primary);
+  }
 
   animation: 7s ${fadeInUp};
   animation-delay: 1000ms;

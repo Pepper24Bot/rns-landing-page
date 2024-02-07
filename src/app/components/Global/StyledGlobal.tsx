@@ -81,15 +81,15 @@ export const BaseButton = styled.button`
   font-weight: bold;
   font-size: var(--sm-text);
   padding: var(--xs-padding) var(--md-padding);
-  background-color: var(--secondary);
+  background-color: var(--primary);
   box-shadow: var(--shadow-1);
-  border-radius: 4px;
+  border-radius: 16px;
+  border: solid 1px rgb(255, 255, 255, 0.15);
   text-transform: uppercase;
-  color: var(--background-darkest);
+  color: var(--contrast-text);
 
   &:hover {
-    background-color: var(--primary);
-    color: var(--contrast-text);
+    background-color: var(--primary-dark);
   }
 `;
 
@@ -140,4 +140,17 @@ export const SectionDivider = styled.div<{ direction?: string }>`
       : direction === "to right up"
       ? "rotate(-3.5deg)"
       : ""};
+`;
+
+export const IconLink = styled.a`
+  margin-right: 5px;
+  border: solid 1px rgb(194, 24, 91, 0.5);
+  border-radius: 16px;
+  padding: 9px 12px;
+  background-color: var(--primary-darkest);
+  filter: drop-shadow(0 0 4px rgba(84, 6, 36, 0.5));
+
+  &:hover {
+    background-color: rgb(84, 6, 36, 0.5);
+  }
 `;

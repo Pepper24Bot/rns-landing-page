@@ -23,7 +23,7 @@ export const Main: React.FC = () => {
             width={400}
             height={340}
             style={{
-              width: "60vmax",
+              width: "65vmax",
               height: "100%",
               opacity: 0.8,
             }}

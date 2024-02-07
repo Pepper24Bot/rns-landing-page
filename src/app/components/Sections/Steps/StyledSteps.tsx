@@ -68,11 +68,11 @@ export const Avatar = styled(FlexCenter)`
   width: 56px;
   height: 56px;
   border-radius: 48px;
-  border: solid 3px var(--primary);
+  border: solid 2px var(--primary);
 `;
 
 export const LineConnector = styled(FlexCenter)<{ isHidden?: boolean }>`
-  border-left: solid 3px var(--primary);
+  border-left: solid 2px var(--primary);
   width: 2px;
   height: 130px;
   background-color: red;
