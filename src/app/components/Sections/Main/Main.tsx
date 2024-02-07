@@ -18,12 +18,12 @@ export const Main: React.FC = () => {
       <Container>
         <BgContainer>
           <Image
-            src="/images/rns-bg.svg"
+            src="/images/rns-bg-3.svg"
             alt="Robo Labs Icon"
             width={400}
             height={340}
             style={{
-              width: "50vmax",
+              width: "60vmax",
               height: "100%",
               opacity: 0.8,
             }}

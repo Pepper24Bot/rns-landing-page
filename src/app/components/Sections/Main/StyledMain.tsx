@@ -40,20 +40,24 @@ export const BgContainer = styled.div`
   opacity: 0.75;
   right: 0;
 
-  @media only screen and (max-width: 800px) {
-    transform: scale(1.5, 2.1);
+  @media only screen and (max-width: 500px) {
+    transform: scale(1.5, 2.7);
+  }
+
+  @media only screen and (min-width: 500px) and (max-width: 800px) {
+    transform: scale(1.5, 2.25);
   }
 
   @media only screen and (min-width: 800px) and (max-width: 1000px) {
-    transform: scale(1.5, 2);
+    transform: scale(1.5, 2.1);
   }
 
   @media only screen and (min-width: 1000px) and (max-width: 1500px) {
-    transform: scale(1.5);
+    transform: scale(1.5, 1.75);
   }
 
   @media only screen and (min-width: 1500px) {
-    transform: scale(1.05);
+    transform: scale(1);
   }
 `;
 

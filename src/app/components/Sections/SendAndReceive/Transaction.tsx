@@ -15,6 +15,7 @@ import {
   Field,
   SendButton,
   CancelButton,
+  SubTitle,
 } from "./StyledTransaction";
 import {
   FlexCenter,
@@ -34,16 +35,19 @@ export const Transaction: React.FC = () => {
   return (
     <PageSection>
       <Container>
-        <Heading>
-          <PageTitle className="slide-right-delay-1 reveal">
-            Send And Receive Using RNS
-          </PageTitle>
-          <PageSubTitle className="slide-left-delay-1 reveal">
-            Dont waste time searching for your FuturePass or Root Network wallet
-            address, simply register an RNS, attach it to your desired wallet
-            address and presto! Now you can send and receive using your RNS!
-          </PageSubTitle>
-        </Heading>
+        <FlexCenter>
+          <Heading>
+            <PageTitle className="slide-right-delay-1 reveal">
+              Send And Receive Using RNS
+            </PageTitle>
+            <SubTitle className="slide-left-delay-1 reveal">
+              Dont waste time searching for your FuturePass address, simply
+              register a .ROOT extension and attach it to your desired
+              FuturePass address. Now you can send and receive using your RNS +
+              so much more!
+            </SubTitle>
+          </Heading>
+        </FlexCenter>
         <FlexCenter>
           <TransactionCard className="slide-up-delay-1 reveal">
             <CardHeader>

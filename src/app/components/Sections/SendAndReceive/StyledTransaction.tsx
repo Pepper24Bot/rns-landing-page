@@ -3,6 +3,7 @@ import {
   BaseButton,
   Flex,
   PageContent,
+  PageSubTitle,
   RelativeContainer,
 } from "../../Global/StyledGlobal";
 
@@ -152,6 +153,11 @@ export const Label = styled(CardText)`
 
 export const Value = styled(CardText)`
   opacity: 0.8;
+`;
+
+export const SubTitle = styled(PageSubTitle)`
+  margin: 16px 0;
+  max-width: 800px;
 `;
 
 export const SendIcon = styled.i`

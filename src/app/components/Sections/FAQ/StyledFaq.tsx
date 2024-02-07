@@ -13,15 +13,17 @@ export const Questions = styled.div`
   padding: 64px 0;
 `;
 
-export const QuestionItem = styled(Flex)<{ isFirst?: boolean }>`
-  border-bottom: solid 1px;
+export const QuestionItem = styled(Flex)<{ isFirst?: boolean; index?: number }>`
+  border-bottom: solid 1px rgba(256, 256, 256, 0.25);
   padding: 16px 8px;
   max-width: 900px;
-  ${({ isFirst }) => (isFirst ? "border-top: solid 1px;" : "")};
+  ${({ isFirst }) =>
+    isFirst ? "border-top: solid 1px rgba(256, 256, 256, 0.25);" : ""};
   cursor: pointer;
 `;
 
 export const Title = styled(BaseFont)`
+  font-weight: 400;
   text-align: start;
   font-size: 18px;
   width: 100%;
@@ -37,7 +39,7 @@ export const SubTitle = styled(BaseFont)<{
 }>`
   font-size: 16px;
   font-weight: 300;
-  opacity: 0.8;
+  opacity: 0.85;
   text-align: start;
   white-space: pre-line;
   ${({ isShowing, contentHeight }) =>

@@ -8,6 +8,7 @@ import Partners from "../components/Sections/Partners/Partners";
 import YourRns from "../components/Sections/YourRns/YourRns";
 import FrequentlyAskedQuestions from "../components/Sections/FAQ/Faq";
 import Transaction from "../components/Sections/SendAndReceive/Transaction";
+import RootWallet from "../components/Sections/RootWallet/RootWallet";
 
 const Container = styled.div`
   padding-top: 100px;
@@ -44,6 +45,7 @@ export default function Home() {
       <Features />
       <Transaction />
       <Steps />
+      <RootWallet />
       <Partners />
       <YourRns />
       <FrequentlyAskedQuestions />

@@ -7,22 +7,22 @@ export const FEATURES = [
         hightlights: []
     },
     {
-        title: 'Data & Social Graph Identity',
-        content: '',
-        hightlights: []
-    },
-    {
         title: 'Digital Wallet Identity',
         content: '',
         hightlights: []
     },
     {
-        title: 'Setting The Root Network Naming Standards',
+        title: 'Data & Social Graph Identity',
         content: '',
         hightlights: []
     },
     {
         title: 'Earn Points Towards Your FutureScore',
+        content: '',
+        hightlights: []
+    },
+    {
+        title: 'Setting The Root Network Naming Standards',
         content: '',
         hightlights: []
     },
@@ -46,7 +46,7 @@ export const STEPS: Step[] = [
     },
     {
         heading: 'Manage',
-        subheading: 'Use the RNS dashboard to manage your identities and connect them to interoperable services.',
+        subheading: 'Use the dashboard to link your RNS to a wallet address, change image, extend expiry + so much more!',
         linkText: '',
     },
     {
@@ -97,35 +97,63 @@ export const PARTNERS = [
 
 export const FAQ = [
     {
-        heading: 'What happens to the registration period if I sell my RNS or transfer it to a new wallet?',
-        subheading: `
-        The registration period carries over to the new owner/wallet. For the avoidance of doubt, if you have registered your ENS for 1 year and after 3 months decide to sell your RNS or transfer it to a new wallet then the remaining 9 months registration period carries over to the new owner/wallet.
-        `,
-        linkText: '',
-    },
-    {
         heading: 'What tokens do I need to register an RNS?',
         subheading: `
-        RNS currently allows the registration and renewal of your RNS in ROOT. ROOT is also the token required for gas.
+        RNS’s can be registered using ROOT or USDC. Transaction fees are paid in XRP.
         `,
         linkText: '',
     },
     {
         heading: 'What is the price of an RNS?',
         subheading: `
-        RNS has a tiered pricing model that is priced in USDC and then converted to ROOT using pricing oracles based on the ROOT/USDC price at the time of purchase.
+        RNS has a tiered pricing model that is priced in USDC and then converted to ROOT using pricing oracles based on the latest ROOT/USDC price at the time of purchase.
 
         Pricing:
 
-        5+ letter/digit/emoji/symbol names per year - 5 USDC equivalent paid in ROOT.
+        5+ letter/digit/emoji/symbol names per year - 7 USDC or ROOT equivalent
 
-        4 letter/digit/emoji/symbol names per year - 50 USDC equivalent paid in ROOT.
+        4 letter/digit/emoji/symbol names per year - 50 USDC or ROOT equivalent
 
-        3 letter/digit/emoji/symbol names per year - 150 USDC equivalent paid in ROOT.
+        3 letter/digit/emoji/symbol names per year - 150 USDC or ROOT equivalent
 
-        2 letter/digit/emoji/symbol names per year - 350 USDC equivalent paid in ROOT.
-        
-        1 letter/digit/emoji/symbol names per year - 750 USDC equivalent paid in ROOT.
+        2 letter/digit/emoji/symbol names per year - 350 USDC or ROOT equivalent
+
+        1 letter/digit/emoji/symbol names per year - 750 USDC or ROOT equivalent
+        `,
+        linkText: '',
+    },
+    {
+        heading: 'What address can I link/resolve my .root extension to?',
+        subheading: `
+        Your .root extension has been created to specifically attach to your FuturePass address only in order to make it easily identified.
+        `,
+        linkText: '',
+    },
+    {
+        heading: 'What happens to the registration period if I sell my RNS or transfer it to a new wallet?',
+        subheading: `
+        The registration period carries over to the new owner/wallet. For the avoidance of doubt, if you have registered your ENS for 1 year and after 3 months decide to sell your RNS or transfer it to a new wallet then the remaining 9 months registration period carries over to the new wallet/owner.
+        `,
+        linkText: '',
+    },
+    {
+        heading: 'Can I change the image on my RNS NFT?',
+        subheading: `
+        Yes you can easily change the image from your Dashboard.
+        `,
+        linkText: '',
+    },
+    {
+        heading: 'Do I save on transaction fees by registering my RNS for a longer period of time?',
+        subheading: `
+        Yes, regardless of the duration you choose to register your RNS for, the transaction fee remains the same. That means if you choose to renew your RNS every year over a period of 5 years, you will incur a total transaction fees that are five times higher than if you had registered it just once for the entire 5-year period.
+        `,
+        linkText: '',
+    },
+    {
+        heading: 'How can I contact you with a suggestion, feedback, issue or further questions?',
+        subheading: `
+        The easiest and quickest method is via opening a Support Ticket in our discord.
         `,
         linkText: '',
     },

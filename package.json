@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/roboto": "^5.0.8",
     "@fontsource/roboto-mono": "^5.0.16",
     "next": "14.0.4",
     "react": "^18",

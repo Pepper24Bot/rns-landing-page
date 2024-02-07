@@ -11,8 +11,10 @@ import { PageSection, PageTitle } from "../../Global/StyledGlobal";
 import { FAQ } from "@/app/global/constants";
 
 export const FrequentlyAskedQuestions: React.FC = () => {
-  const [isActive, setIsActive] = useState<boolean[]>([false, false, false]);
-  const [contentHeights, setContentHeights] = useState<number[]>([0, 0, 0]);
+  const [isActive, setIsActive] = useState<number | null>(null);
+  const [contentHeights, setContentHeights] = useState<number[]>([
+    0, 0, 0, 0, 0, 0, 0,
+  ]);
 
   const getTransitionClass = (index: number) => {
     return (index + 1) % 2 === 0
@@ -46,15 +48,14 @@ export const FrequentlyAskedQuestions: React.FC = () => {
                 className={getTransitionClass(index)}
                 key={faq.heading}
                 isFirst={index === 0}
+                index={index}
                 onClick={() => {
-                  // avoid direct mutation
-                  const collapsedPanels = [...isActive];
-                  collapsedPanels[index] = !isActive[index];
-                  setIsActive(collapsedPanels);
+                  const activePanel = isActive === index ? null : index;
+                  setIsActive(activePanel);
                 }}
               >
                 <IconContainer>
-                  {isActive[index] ? (
+                  {index === isActive ? (
                     <i className="fa-solid fa-chevron-down" />
                   ) : (
                     <i className="fa-solid fa-chevron-right" />
@@ -63,7 +64,7 @@ export const FrequentlyAskedQuestions: React.FC = () => {
                 <div>
                   <Title>{faq.heading}</Title>
                   <SubTitle
-                    isShowing={isActive[index]}
+                    isShowing={index === isActive}
                     contentHeight={`${contentHeights[index]}px`}
                     id={`faq-content-${index}`}
                   >

@@ -6,12 +6,17 @@
 @import "~@fontsource/roboto-mono/500.css";
 @import "~@fontsource/roboto-mono/200.css";
 
+@import "~@fontsource/roboto/700.css";
+@import "~@fontsource/roboto/400.css";
+@import "~@fontsource/roboto/100.css";
+
 :root {
   /* --foreground-rgb: 0 0 0; */
   --background-start-rgb: 214 219 220;
   --background-end-rgb: 255 255 255;
 
   --default-font: Roboto Mono;
+  --secondary-font: Roboto;
 
   --primary: #c2185b; /* rgb(194,24,91) */
   /* --secondary: #212121; */
@@ -202,6 +207,41 @@ button {
   opacity: 0;
   transition: 500ms all ease;
   transition-delay: 600ms;
+}
+
+.slide-left-delay-4.reveal {
+  transform: translateX(-50px);
+  opacity: 0;
+  transition: 500ms all ease;
+  transition-delay: 800ms;
+}
+
+.slide-left-delay-5.reveal {
+  transform: translateX(-50px);
+  opacity: 0;
+  transition: 500ms all ease;
+  transition-delay: 1000ms;
+}
+
+.slide-left-delay-6.reveal {
+  transform: translateX(-50px);
+  opacity: 0;
+  transition: 500ms all ease;
+  transition-delay: 1200ms;
+}
+
+.slide-left-delay-7.reveal {
+  transform: translateX(-50px);
+  opacity: 0;
+  transition: 500ms all ease;
+  transition-delay: 1400ms;
+}
+
+.slide-left-delay-8.reveal {
+  transform: translateX(-50px);
+  opacity: 0;
+  transition: 500ms all ease;
+  transition-delay: 1600ms;
 }
 
 .slide-right-delay-1.reveal {
