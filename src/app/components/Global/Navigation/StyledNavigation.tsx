@@ -71,7 +71,7 @@ export const Menu = styled.div`
   border-radius: 4px;
 `;
 
-export const MenuLink = styled(IconLink)<{ divider?: boolean }>`
+export const MenuLink = styled.a<{ divider?: boolean }>`
   margin-right: 0;
   padding: 8px 0;
   min-width: 100px;
