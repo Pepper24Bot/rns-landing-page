@@ -32,9 +32,18 @@ export const GenericModal: React.FC = () => {
   };
 
   return isModalOpen ? (
-    <Container>
+    <Container
+      onClick={(event) => {
+        toggleModal();
+        event.stopPropagation();
+      }}
+    >
       <ModalContainer>
-        <Modal>
+        <Modal
+          onClick={(event) => {
+            event.stopPropagation();
+          }}
+        >
           <Header>
             <Flex>
               <Image
