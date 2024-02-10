@@ -34,13 +34,21 @@ export const PageWrapper: React.FC<WrapperProps> = (props: WrapperProps) => {
     console.log("toggle modal...", isEmpty(modal));
     if (isEmpty(modal)) {
       setModalOpen(false);
-      document.body.style.overflow = "unset";
+
+      // hack - avoid layout shift
+      document.body.style.overflow = "auto";
+      document.body.style.marginRight = "0";
+      document.getElementById("navigation-bar")!.style.marginRight = "0";
     }
 
     if (!isEmpty(modal)) {
       setModalOpen(true);
       setModalProps({ ...modal });
+
+      // hack - avoid layout shift
+      document.getElementById("navigation-bar")!.style.marginRight = "6px";
       document.body.style.overflow = "hidden";
+      document.body.style.marginRight = "6px";
     }
   };
 
@@ -50,6 +58,7 @@ export const PageWrapper: React.FC<WrapperProps> = (props: WrapperProps) => {
         toggleModal,
         isModalOpen,
         modalContent: modalProps?.props,
+        props: modalProps,
       }}
     >
       <Container>

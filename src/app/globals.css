@@ -87,6 +87,7 @@ body {
   font-family: var(--default-font);
   background-color: var(--background-default);
   margin: 0;
+  overflow: auto;
 }
 
 a {

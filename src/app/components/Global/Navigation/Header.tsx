@@ -26,7 +26,7 @@ export const Header: React.FC = () => {
   return (
     <div>
       <Container isTop={isTop}>
-        <NavigationBar>
+        <NavigationBar id="navigation-bar">
           <ImageContainer>
             <Image
               src="/images/rns-logo-1.png"

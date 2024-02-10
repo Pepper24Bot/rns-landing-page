@@ -132,7 +132,7 @@ export const FAQ = [
     {
         heading: 'What happens to the registration period if I sell my RNS or transfer it to a new wallet?',
         subheading: `
-        The registration period carries over to the new owner/wallet. For the avoidance of doubt, if you have registered your ENS for 1 year and after 3 months decide to sell your RNS or transfer it to a new wallet then the remaining 9 months registration period carries over to the new wallet/owner.
+        The registration period carries over to the new owner/wallet. For the avoidance of doubt, if you have registered your RNS for 1 year and after 3 months decide to sell your RNS or transfer it to a new wallet then the remaining 9 months registration period carries over to the new wallet/owner.
         `,
         linkText: '',
     },

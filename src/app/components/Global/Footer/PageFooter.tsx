@@ -57,7 +57,7 @@ export const PageFooter: React.FC = () => {
               onClick={() => {
                 toggleModal({
                   props: <p>TODO: Privacy Policy</p>,
-                  //  title: "Delete Arkive",
+                  title: "Privacy Policy",
                   //  confirmAction: () => {
                   //    return handleDeleteArkive();
                   //  },

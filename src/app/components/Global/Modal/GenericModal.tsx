@@ -1,6 +1,15 @@
 import React, { useContext } from "react";
-import { Container, ModalContainer } from "./StyledModal";
+import {
+  Container,
+  Footer,
+  Header,
+  Modal,
+  ModalContainer,
+  Title,
+} from "./StyledModal";
 import { PageWrapperContext } from "../../Wrapper/PageWrapper";
+
+import Image from "next/image";
 
 export const GenericModal: React.FC = () => {
   const { toggleModal, isModalOpen, props, modalContent } =
@@ -18,7 +27,22 @@ export const GenericModal: React.FC = () => {
         event.stopPropagation();
       }}
     >
-      <ModalContainer>{modalContent}</ModalContainer>
+      <ModalContainer>
+        <Modal>
+          <Header>
+            <Image
+              src="/images/rns-2.svg"
+              alt="RNS Icon"
+              width={46}
+              height={20}
+              style={{ opacity: 0.5, margin: "4px 10px 0 0" }}
+            />
+            <Title>{props?.title}</Title>
+          </Header>
+          {modalContent}
+          <Footer>Footer</Footer>
+        </Modal>
+      </ModalContainer>
     </Container>
   ) : (
     <></>
