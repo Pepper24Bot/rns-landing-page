@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Flex, FlexCenter } from "../StyledGlobal";
+import { BaseButton, Flex, FlexCenter, FlexJustified } from "../StyledGlobal";
 
 export const Container = styled(FlexCenter)`
   position: fixed;
@@ -27,19 +27,61 @@ export const Modal = styled.div`
   background-color: var(--background-darkest);
 `;
 
-export const Header = styled(Flex)`
+export const Header = styled(FlexJustified)`
   border-radius: 8px 8px 0 0;
   background-color: rgb(84, 6, 36, 0.25);
   padding: 20px 25px 20px 50px;
 `;
 
-export const Footer = styled(Flex)`
+export const Footer = styled(FlexJustified)`
   border-top: solid 1px rgb(84, 6, 36, 0.75);
-  padding: 25px 50px;
+  padding: 24px 50px;
+`;
+
+export const Content = styled(Flex)`
+  height: calc(100% - (64px + 80px));
+  padding: 50px 30px 20px 50px;
 `;
 
 export const Title = styled.div`
   font-family: var(--secondary-font);
   font-size: 16px;
-  // font-weight: 700;
+`;
+
+export const ConfirmBtn = styled(BaseButton)`
+  border-radius: 4px;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: capitalize;
+  padding: 4px 25px;
+`;
+
+export const CancelBtn = styled(ConfirmBtn)`
+  background-color: var(--backgrund-darkest);
+  border: solid 1px var(--primary);
+  color: var(--primary);
+  margin-right: 10px;
+
+  &:hover {
+    color: var(--contrast-text);
+  }
+`;
+
+export const DownloadBtn = styled.a`
+  border: none;
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--primary);
+
+  &:hover {
+    color: rgb(84, 6, 36, 1);
+  }
+`;
+
+export const CloseBtn = styled.button`
+  &:hover {
+    opacity: 0.35;
+  }
 `;

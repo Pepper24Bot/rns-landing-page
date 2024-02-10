@@ -31,7 +31,6 @@ export const PageWrapper: React.FC<WrapperProps> = (props: WrapperProps) => {
   const [modalProps, setModalProps] = useState<Modal>();
 
   const toggleModal = (modal?: Modal) => {
-    console.log("toggle modal...", isEmpty(modal));
     if (isEmpty(modal)) {
       setModalOpen(false);
 

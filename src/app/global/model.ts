@@ -14,11 +14,14 @@ export interface Modal {
     props?: React.ReactNode;
     title?: string;
     confirmLoading?: boolean;
+    confirmBtnLabel?: string;
     ButtonProps?: React.ReactNode;
     disableCancel?: boolean;
+    cancelBtnLabel?: string;
+    downloadFile?: string;
     // This is in preparation for reusability
     // Intentionally make this a promise, so we can perform waiting
-    confirmAction?: () => Promise<void>;
+    confirmAction?: () => void;
     saveCallback?: () => void;
     cancelCallback?: () => void;
     clearCallback?: () => void;

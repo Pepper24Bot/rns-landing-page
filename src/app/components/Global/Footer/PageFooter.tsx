@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useContext } from "react";
 import { Page } from "../../Wrapper/StyledWrapper";
 import { FlexCenter } from "../StyledGlobal";
@@ -12,10 +14,21 @@ import {
 } from "./StyledFooter";
 
 import { PageWrapperContext } from "../../Wrapper/PageWrapper";
+
 import Image from "next/image";
+import PolicyAndTerms from "../Modal/Contents/PolicyAndTerms";
+import { ConfirmBtn } from "../Modal/StyledModal";
 
 export const PageFooter: React.FC = () => {
   const { toggleModal } = useContext(PageWrapperContext);
+
+  const handleUnderstood = () => {
+    document.cookie = `policy-approval=understood;`;
+  };
+
+  const handleAccept = () => {
+    document.cookie = `terms-approval=accepted;`;
+  };
 
   return (
     <Footer>
@@ -56,12 +69,14 @@ export const PageFooter: React.FC = () => {
             <TermsText
               onClick={() => {
                 toggleModal({
-                  props: <p>TODO: Privacy Policy</p>,
+                  props: <PolicyAndTerms type="Policy" />,
                   title: "Privacy Policy",
-                  //  confirmAction: () => {
-                  //    return handleDeleteArkive();
-                  //  },
-                  //  confirmLoading: isDeleteLoading,
+                  confirmBtnLabel: "Understood",
+                  disableCancel: true,
+                  downloadFile: "/documents/rns-privacy-policy.pdf",
+                  confirmAction: () => {
+                    return handleUnderstood();
+                  },
                 });
               }}
             >
@@ -70,12 +85,14 @@ export const PageFooter: React.FC = () => {
             <TermsText
               onClick={() => {
                 toggleModal({
-                  props: <p>TODO: Terms of Service</p>,
-                  //  title: "Delete Arkive",
-                  //  confirmAction: () => {
-                  //    return handleDeleteArkive();
-                  //  },
-                  //  confirmLoading: isDeleteLoading,
+                  props: <PolicyAndTerms type="Terms" />,
+                  title: "Terms of Service",
+                  confirmBtnLabel: "Accept",
+                  cancelBtnLabel: "Decline",
+                  downloadFile: "/documents/rns-terms-of-service.pdf",
+                  confirmAction: () => {
+                    return handleAccept();
+                  },
                 });
               }}
             >
