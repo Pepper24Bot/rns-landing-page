@@ -59,6 +59,38 @@ export const PolicyAndTerms: React.FC<PolicyAndTerms> = (
     }
   };
 
+  const getHref = (url: string) => {
+    if (url.toLocaleLowerCase() === "support@rootnameservice.com") {
+      return "mailto:support@rootnameservice.com";
+    } else {
+      return url;
+    }
+  };
+
+  const getTextRenderer = (options: any) => {
+    const text = options.str;
+    const height = options.height;
+
+    // TODO: Enable case insensitivity
+    // (?i:.rootnameservice.com) -- fix this
+    const pattern = new RegExp(
+      /(?:.ROOTNAMESERVICE.COM|.rootnameservice.com)/g
+    );
+
+    // this means it is a header
+    if (height > 12) {
+      return `<span class="custom_heading">${text}</span>`;
+    } else if (text.match(pattern)) {
+      return `
+        <a class="custom-link" href="${getHref(text)}" target="_blank">
+          <span class="custom_span">${text}</span>
+        </a>
+      `;
+    } else {
+      return `<span>${text}</span>`;
+    }
+  };
+
   return (
     <PdfContainer>
       <div className="document-container">
@@ -69,7 +101,14 @@ export const PolicyAndTerms: React.FC<PolicyAndTerms> = (
             options={options}
             renderMode="canvas"
           >
-            <Page pageNumber={pageNumber} />
+            <Page
+              pageNumber={pageNumber}
+              renderAnnotationLayer={false} // creating a custom annotation
+              canvasBackground="transparent"
+              customTextRenderer={(options) => {
+                return getTextRenderer(options);
+              }}
+            />
           </Document>
         </Content>
         <FlexCenter>

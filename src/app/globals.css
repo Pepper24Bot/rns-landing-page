@@ -370,9 +370,28 @@ button {
 }
 
 .textLayer :is(span, br) {
-  color: rgb(255, 255, 255, 0.75);
+  color: rgb(255, 255, 255, 0.5);
 }
 
 .react-pdf__Page__textContent > span {
   color: rgb(255, 255, 255, 0.75);
+}
+
+.react-pdf__Page__textContent .custom_span {
+  top: 0px;
+  color: #c2185b;
+  cursor: pointer;
+
+  &:hover {
+    color: #1397f0;
+  }
+}
+
+.custom-link {
+  display: flex;
+}
+
+.custom_heading {
+  /* font-weight: 400; */
+  color: white !important;
 }
