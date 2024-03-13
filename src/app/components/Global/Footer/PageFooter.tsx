@@ -71,12 +71,7 @@ export const PageFooter: React.FC = () => {
                 toggleModal({
                   props: <PolicyAndTerms type="Policy" />,
                   title: "Privacy Policy",
-                  confirmBtnLabel: "Understood",
-                  disableCancel: true,
                   downloadFile: "/documents/rns-privacy-policy.pdf",
-                  confirmAction: () => {
-                    return handleUnderstood();
-                  },
                 });
               }}
             >
@@ -87,12 +82,7 @@ export const PageFooter: React.FC = () => {
                 toggleModal({
                   props: <PolicyAndTerms type="Terms" />,
                   title: "Terms of Service",
-                  confirmBtnLabel: "Accept",
-                  cancelBtnLabel: "Decline",
                   downloadFile: "/documents/rns-terms-of-service.pdf",
-                  confirmAction: () => {
-                    return handleAccept();
-                  },
                 });
               }}
             >

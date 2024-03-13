@@ -349,58 +349,30 @@ button {
 }
 
 /* Modal PDF Reader starts here */
-
-.document-container .react-pdf__Document {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.react-pdf__Page {
+  min-width: 0 !important;
+  width: 100%;
+  margin-top: -50px;
 }
 
 .react-pdf__Page {
-  /* this is needed to remove excess spaces */
-  /* max-width: 580px; */
-  background-color: black !important;
-  width: 100%;
   min-width: 0 !important;
-  min-height: 0 !important;
-  margin-top: -75px;
-  margin-left: -100px;
-  /* height: 810px; */
-  /* border: solid 1px rgb(255, 255, 255, 0.25); */
+  width: 100%;
+  /* margin-top: -50px; */
 }
 
 .react-pdf__Page__canvas {
-  /* max-width: 580px; */
-  /* margin-left: -50px;
-  margin-top: -75px; */
+  width: inherit !important;
 }
 
 .react-pdf__Page__textContent {
   background-color: black;
-  /* height: 950px !important; */
-  /* height: calc(var(--scale-factor) * 925px) !important; */
-  /* max-width: 580px; */
-  /* margin-left: -50px;
-  margin-top: -75px; */
 }
 
-.textLayer {
-  /* border: solid yellow; */
-  /* background-color: red; */
-}
-
-.react-pdf__Page__annotations {
-  /* max-width: 580px; */
-  /* margin-top: -75px; */
+.textLayer :is(span, br) {
+  color: rgb(255, 255, 255, 0.75);
 }
 
 .react-pdf__Page__textContent > span {
   color: rgb(255, 255, 255, 0.75);
-  /* font-size: 12px !important; */
-  font-size: calc(var(--scale-factor) * 12.5px) !important;
-}
-
-.react-pdf__Page__annotations > section {
-  /* max-width: 580px; */
-  /* margin-top: -75px; */
 }

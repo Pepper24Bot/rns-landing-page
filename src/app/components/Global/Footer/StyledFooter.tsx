@@ -22,6 +22,11 @@ export const FooterLogo = styled.div`
 
 export const FooterTerms = styled(FlexJustified)`
   padding: 20px 50px;
+
+  @media only screen and (max-width: 600px) {
+    display: block;
+    padding: 20px 30px;
+  }
 `;
 
 export const CopyrightText = styled(BaseFont)`
@@ -95,7 +100,7 @@ export const Subscription = styled.div`
 export const EmailContainer = styled(FlexCenter)`
   background-color: rgb(84, 6, 36, 0.1);
   text-align: center;
-  padding: 100px 0;
+  padding: 100px 15px;
 `;
 
 export const SubscribeButton = styled(BaseButton)`

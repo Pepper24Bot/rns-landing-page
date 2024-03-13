@@ -75,7 +75,7 @@ export const GenericModal: React.FC = () => {
               Download
             </DownloadBtn>
             <div>
-              {!props?.disableCancel && (
+              {!props?.disableCancel && props?.cancelBtnLabel && (
                 <CancelBtn
                   onClick={() => {
                     return toggleModal();

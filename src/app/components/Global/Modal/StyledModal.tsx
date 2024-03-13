@@ -12,9 +12,9 @@ export const Container = styled(FlexCenter)`
 `;
 
 export const ModalContainer = styled(FlexCenter)`
-  max-width: 670px;
+  max-width: 685px;
   width: 100%;
-  height: 600px;
+  height: 620px;
   border-radius: 8px;
   background: linear-gradient(180deg, #000000 32.5%, #c2185b 100%);
 `;
@@ -40,7 +40,11 @@ export const Footer = styled(FlexJustified)`
 
 export const Content = styled(Flex)`
   height: calc(100% - (64px + 80px));
-  padding: 50px 30px 20px 50px;
+  padding: 50px 30px 50px 30px;
+
+  @media only screen and (max-width: 600px) {
+    padding: 50px 20px 50px 20px;
+  }
 `;
 
 export const Title = styled.div`
