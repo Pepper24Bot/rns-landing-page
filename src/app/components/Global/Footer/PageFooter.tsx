@@ -2,7 +2,7 @@
 
 import React, { useContext } from "react";
 import { Page } from "../../Wrapper/StyledWrapper";
-import { FlexCenter } from "../StyledGlobal";
+import { FlexCenter, Tooltip } from "../StyledGlobal";
 import {
   Footer,
   FooterLogo,
@@ -42,12 +42,14 @@ export const PageFooter: React.FC = () => {
           />
           <FooterContent>
             <FlexCenter>
-              <IconButton
-                href="https://twitter.com/RootNameService"
-                target="_blank"
-              >
-                <i className="fa-brands fa-discord fa-lg" />
-              </IconButton>
+              <Tooltip title="Coming soon!" arrow>
+                <IconButton
+                  href="https://twitter.com/RootNameService"
+                  target="_blank"
+                >
+                  <i className="fa-brands fa-discord fa-lg" />
+                </IconButton>
+              </Tooltip>
               <IconButton
                 href="https://twitter.com/RootNameService"
                 target="_blank"
