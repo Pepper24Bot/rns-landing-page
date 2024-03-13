@@ -19,7 +19,7 @@ export const Partners: React.FC = () => {
       <div>
         <Heading>
           <PartnersTitle className="slide-left-delay-1 reveal">
-            Partners Platforms
+            Partner Platforms
           </PartnersTitle>
           <PartnersSubTitle className="slide-right-delay-2 reveal">
             The following partner platforms support RNS

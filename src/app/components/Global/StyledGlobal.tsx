@@ -1,3 +1,8 @@
+import {
+  Tooltip as MuiTooltip,
+  TooltipProps,
+  tooltipClasses,
+} from "@mui/material";
 import styled from "styled-components";
 
 export const Flex = styled.div`
@@ -154,3 +159,19 @@ export const IconLink = styled.a`
     background-color: rgb(84, 6, 36, 0.5);
   }
 `;
+
+export const Tooltip = styled(({ className, ...props }: TooltipProps) => (
+  <MuiTooltip {...props} classes={{ popper: className }} />
+))(({ theme }) => ({
+  [`& .${tooltipClasses.tooltip}`]: {
+    backgroundColor: "#0C0C0C",
+    padding: "12px",
+    fontSize: "14px",
+    filter: `drop-shadow(0px 1px 1px rgb(0, 0, 0, 0.5))`,
+  },
+  [`& .${tooltipClasses.arrow}`]: {
+    color: "#0C0C0C",
+    fontSize: "16px",
+    filter: `drop-shadow(-1px 0px 0px rgb(0, 0, 0, 0.25))`,
+  },
+}));

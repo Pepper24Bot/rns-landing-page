@@ -110,7 +110,7 @@ export const FAQ = [
 
         Pricing:
 
-        5+ letter/digit/emoji/symbol names per year - 7 USDC or ROOT equivalent
+        5+ letter/digit/emoji/symbol names per year - 5 USDC or ROOT equivalent
 
         4 letter/digit/emoji/symbol names per year - 50 USDC or ROOT equivalent
 
@@ -132,7 +132,7 @@ export const FAQ = [
     {
         heading: 'What happens to the registration period if I sell my RNS or transfer it to a new wallet?',
         subheading: `
-        The registration period carries over to the new owner/wallet. For the avoidance of doubt, if you have registered your RNS for 1 year and after 3 months decide to sell your RNS or transfer it to a new wallet then the remaining 9 months registration period carries over to the new wallet/owner.
+        The registration period carries over to the new holder/wallet. For the avoidance of doubt, if you have registered your RNS for 1 year and after 3 months decide to sell your RNS or transfer it to a new wallet then the remaining 9 months registration period carries over to the new holder/wallet.
         `,
         linkText: '',
     },
@@ -146,7 +146,7 @@ export const FAQ = [
     {
         heading: 'Do I save on transaction fees by registering my RNS for a longer period of time?',
         subheading: `
-        Yes, regardless of the duration you choose to register your RNS for, the transaction fee remains the same. That means if you choose to renew your RNS every year over a period of 5 years, you will incur a total transaction fees that are five times higher than if you had registered it just once for the entire 5-year period.
+        Yes, regardless of the duration you choose to register your RNS for, the transaction fee remains the same. That means if you choose to renew your RNS every year over a period of 5 years, you will incur total transaction fees that are five times higher than if you had registered it just once for the entire 5-year period.
         `,
         linkText: '',
     },

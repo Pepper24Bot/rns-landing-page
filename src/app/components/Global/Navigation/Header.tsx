@@ -9,7 +9,7 @@ import {
   MenuContainer,
   VerticalDivider,
 } from "./StyledNavigation";
-import { BaseButton, ImageContainer, IconLink } from "../StyledGlobal";
+import { BaseButton, ImageContainer, IconLink, Tooltip } from "../StyledGlobal";
 
 import Image from "next/image";
 
@@ -36,12 +36,11 @@ export const Header: React.FC = () => {
             />
           </ImageContainer>
           <DesktopLayout>
-            <IconLink
-              href="https://twitter.com/RootNameService"
-              target="_blank"
-            >
-              <i className="fa-brands fa-discord fa-lg" />
-            </IconLink>
+            <Tooltip title="Coming soon!" arrow>
+              <IconLink>
+                <i className="fa-brands fa-discord fa-lg" />
+              </IconLink>
+            </Tooltip>
             <IconLink
               href="https://twitter.com/RootNameService"
               target="_blank"
@@ -49,7 +48,9 @@ export const Header: React.FC = () => {
               <i className="fa-brands fa-x-twitter fa-lg" />
             </IconLink>
             <VerticalDivider />
-            <BaseButton>Log In</BaseButton>
+            <Tooltip title="Coming soon!" arrow>
+              <BaseButton>Log In</BaseButton>
+            </Tooltip>
           </DesktopLayout>
           <MobileLayout>
             <button
@@ -70,13 +71,15 @@ export const Header: React.FC = () => {
                 }}
               >
                 <Menu>
-                  <MenuLink
-                    divider
-                    href="https://twitter.com/RootNameService"
-                    target="_blank"
-                  >
-                    Discord
-                  </MenuLink>
+                  <Tooltip title="Coming Soon!" arrow>
+                    <MenuLink
+                      divider
+                      href="https://twitter.com/RootNameService"
+                      target="_blank"
+                    >
+                      Discord
+                    </MenuLink>
+                  </Tooltip>
                   <MenuLink
                     divider
                     href="https://twitter.com/RootNameService"
@@ -84,12 +87,14 @@ export const Header: React.FC = () => {
                   >
                     Twitter
                   </MenuLink>
-                  <MenuLink
-                    href="https://twitter.com/RootNameService"
-                    target="_blank"
-                  >
-                    Login
-                  </MenuLink>
+                  <Tooltip title="Coming Soon!" arrow>
+                    <MenuLink
+                      href="https://twitter.com/RootNameService"
+                      target="_blank"
+                    >
+                      Login
+                    </MenuLink>
+                  </Tooltip>
                 </Menu>
               </MenuContainer>
             )}

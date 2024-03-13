@@ -46,7 +46,7 @@ export default function Home() {
       <Transaction />
       <Steps />
       <RootWallet />
-      <Partners />
+      {/* <Partners /> */}
       <YourRns />
       <FrequentlyAskedQuestions />
     </Container>

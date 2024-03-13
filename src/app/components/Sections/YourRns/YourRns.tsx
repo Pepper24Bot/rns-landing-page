@@ -32,14 +32,14 @@ export const YourRns: React.FC = () => {
         </RnsTitle>
         <ImageContainer className="slide-up-delay-2 reveal">
           <Image
-            src="/images/legend-root.png"
+            src="/images/rns-nft.gif"
             alt="Your-RNS"
-            width={250}
-            height={300}
+            width={275}
+            height={400}
             style={{
               borderRadius: "16px",
-              border: "solid 2px rgb(255, 255, 255, 0.5)",
-              boxShadow: "0px 8px 8px 16px rgba(0, 0, 0, 1)",
+              border: "solid 1px rgb(255, 255, 255, 0.55)",
+              boxShadow: "0px 0px 16px 8px rgba(0, 0, 0, 1)",
             }}
           />
         </ImageContainer>

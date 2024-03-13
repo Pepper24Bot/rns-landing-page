@@ -37,7 +37,7 @@ export const Main: React.FC = () => {
             <HeadingText>
               Be known as <HighlightText>legend.root</HighlightText>
             </HeadingText>
-            <SearchButton>Search Now</SearchButton>
+            <SearchButton>Stay in the loop</SearchButton>
           </Content>
         </ContentContainer>
       </Container>
