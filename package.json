@@ -16,6 +16,8 @@
     "@mui/material": "^5.15.12",
     "@types/lodash": "^4.14.202",
     "@types/pdfjs-dist": "^2.10.378",
+    "airtable": "^0.12.2",
+    "axios": "^1.6.7",
     "lodash": "^4.17.21",
     "next": "14.0.4",
     "pdfjs-dist": "^4.0.379",

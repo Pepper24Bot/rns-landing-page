@@ -12,12 +12,11 @@ import {
   CopyrightText,
   TermsText,
 } from "./StyledFooter";
-
 import { PageWrapperContext } from "../../Wrapper/PageWrapper";
 
+import EmailSubscription from "./EmailSubscription";
 import Image from "next/image";
 import PolicyAndTerms from "../Modal/Contents/PolicyAndTerms";
-import { ConfirmBtn } from "../Modal/StyledModal";
 
 export const PageFooter: React.FC = () => {
   const { toggleModal } = useContext(PageWrapperContext);
@@ -33,6 +32,7 @@ export const PageFooter: React.FC = () => {
   return (
     <Footer>
       <Page>
+        <EmailSubscription />
         <FooterLogo>
           <Image
             src="/images/rns-logo-4.png"

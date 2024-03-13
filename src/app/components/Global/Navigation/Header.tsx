@@ -10,6 +10,7 @@ import {
   VerticalDivider,
 } from "./StyledNavigation";
 import { BaseButton, ImageContainer, IconLink, Tooltip } from "../StyledGlobal";
+import { scrollIntoElement } from "@/app/global/util";
 
 import Image from "next/image";
 
@@ -27,12 +28,19 @@ export const Header: React.FC = () => {
     <div>
       <Container isTop={isTop}>
         <NavigationBar id="navigation-bar">
-          <ImageContainer>
+          <ImageContainer
+            onClick={() => {
+              scrollIntoElement("rns-page-01");
+            }}
+          >
             <Image
               src="/images/rns-logo-1.png"
               alt="RNS Icon"
               width={350}
               height={30}
+              style={{
+                cursor: "pointer",
+              }}
             />
           </ImageContainer>
           <DesktopLayout>

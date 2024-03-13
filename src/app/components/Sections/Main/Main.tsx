@@ -8,14 +8,15 @@ import {
   SearchButton,
   BgContainer,
 } from "./StyledMain";
-
 import { PageSection } from "../../Global/StyledGlobal";
+import { scrollIntoElement } from "@/app/global/util";
+
 import Image from "next/image";
 
 export const Main: React.FC = () => {
   return (
     <PageSection>
-      <Container>
+      <Container id="rns-page-01">
         <BgContainer>
           <Image
             src="/images/rns-bg-3.svg"
@@ -37,7 +38,13 @@ export const Main: React.FC = () => {
             <HeadingText>
               Be known as <HighlightText>legend.root</HighlightText>
             </HeadingText>
-            <SearchButton>Stay in the loop</SearchButton>
+            <SearchButton
+              onClick={() => {
+                scrollIntoElement("stay-in-the-loop");
+              }}
+            >
+              Stay in the loop
+            </SearchButton>
           </Content>
         </ContentContainer>
       </Container>

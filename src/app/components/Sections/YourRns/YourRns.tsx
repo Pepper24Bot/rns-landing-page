@@ -7,7 +7,7 @@ import {
   Content,
   SearchButton,
 } from "./StyledYourRns";
-import { FlexCenter } from "../../Global/StyledGlobal";
+import { FlexCenter, Tooltip } from "../../Global/StyledGlobal";
 
 import Image from "next/image";
 
@@ -38,13 +38,15 @@ export const YourRns: React.FC = () => {
             height={400}
             style={{
               borderRadius: "16px",
-              border: "solid 1px rgb(255, 255, 255, 0.55)",
-              boxShadow: "0px 0px 16px 8px rgba(0, 0, 0, 1)",
+              // border: "solid 1px rgb(255, 255, 255, 0.55)",
+              boxShadow: "0px 0px 24px 8px rgba(0, 0, 0, 1)",
             }}
           />
         </ImageContainer>
         <FlexCenter className="slide-up reveal">
-          <SearchButton>Search Now</SearchButton>
+          <Tooltip title="Coming soon!" arrow>
+            <SearchButton>Search Now</SearchButton>
+          </Tooltip>
         </FlexCenter>
       </Content>
     </Container>
