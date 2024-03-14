@@ -51,9 +51,9 @@ export const PolicyAndTerms: React.FC<PolicyAndTerms> = (
   const getFileName = () => {
     switch (type) {
       case "Policy":
-        return "/documents/rns-privacy-view.pdf";
+        return "/documents/rns-privacy-policy.pdf";
       case "Terms":
-        return "/documents/rns-terms-view.pdf";
+        return "/documents/rns-terms-of-service.pdf";
       default:
         return "";
     }
