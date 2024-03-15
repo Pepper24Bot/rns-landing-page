@@ -42,7 +42,7 @@ export const Transaction: React.FC = () => {
             </PageTitle>
             <SubTitle className="slide-left-delay-1 reveal">
               Dont waste time searching for your FuturePass address, simply
-              register a .ROOT extension and attach it to your desired
+              register a .root extension and attach it to your desired
               FuturePass address. Now you can send and receive using your RNS +
               so much more!
             </SubTitle>
